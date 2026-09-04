@@ -181,6 +181,9 @@
   .sev-slow  .chip-sev{background:var(--sev-slow-bg);color:var(--sev-slow);border-color:var(--sev-slow)}
   .sev-crawl .chip-sev{background:var(--sev-crawl-bg);color:var(--sev-crawl);border-color:var(--sev-crawl)}
 
+  .chip-done{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+  .is-done{opacity:.82}
+  .is-done .ticket-bar{background:var(--accent)!important}
   .ticket-body p{margin:0 0 12px;max-width:72ch}
   .ticket-body p:last-of-type{margin-bottom:0}
   .why{color:var(--ink-soft)}
@@ -261,7 +264,7 @@
 <header class="masthead">
   <p class="eyebrow">Eoleaf · SEO Monkey · établie le 4 septembre 2026</p>
   <h1>Roadmap technique de septembre</h1>
-  <p class="standfirst">Vingt-et-un chantiers ouverts, dont <strong>huit en septembre</strong> pour 26.5 heures estimées, dans leur ordre d'exécution. L'ordre n'est pas décoratif : ce qui empêche une page de vendre passe avant ce qui la freine, et le budget de crawl vient en dernier. Chaque ticket porte son Sheet de travail, avec les URL, les valeurs relevées et les corrections déjà rédigées.</p>
+  <p class="standfirst">Vingt-et-un chantiers ouverts, dont <strong>huit en septembre</strong> pour 25.5 heures estimées, dans leur ordre d'exécution. L'ordre n'est pas décoratif : ce qui empêche une page de vendre passe avant ce qui la freine, et le budget de crawl vient en dernier. Chaque ticket porte son Sheet de travail, avec les URL, les valeurs relevées et les corrections déjà rédigées.</p>
 
   <dl class="figures">
     <div class="figure"><dt>Pages indexées · GSC 90 j</dt><dd>2 994</dd></div>
@@ -304,12 +307,24 @@
 
   <div class="tickets">
 
-    <article class="ticket sev-block">
+    <article class="ticket sev-slow is-done">
       <div class="ticket-rail"><span class="ticket-num">01</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
+          <h3>Redirections des anciennes URL AEROPRO</h3>
+          <span class="chip chip-sev">Freine la page</span> <span class="chip chip-done">Terminé</span>
+        </div>
+        <p>Poser les 301 des anciennes URL produit AEROPRO 40, 100 et 150 vers les fiches NeoPur 400, TeraPur 600 et AltaPur 700. Traité par Nicolas le 04/09/2026, avant l&#x27;échéance d&#x27;octobre. Le contrôle Search Console confirmait le besoin : /fr/products/aeropro-150-airpurifier ressortait en « Explorée, actuellement non indexée ».</p>
+        <p class="accept"><span class="lbl">Critère d'acceptation</span>chaque ancienne URL répond 301 en un saut vers la fiche du modèle actuel.</p>
+        <p class="meta"><span><b>04/09</b></span><span>Eoleaf · Nicolas</span><span><b>1 h</b></span><span><a href="https://docs.google.com/spreadsheets/d/1WntNwaXwSKQvZTx6WlzFb1HHujttU6rBjMG_choz6sA/edit">Redirections AEROPRO Eoleaf</a></span></p>
+      </div>
+    </article>
+    <article class="ticket sev-block is-done">
+      <div class="ticket-rail"><span class="ticket-num">02</span><span class="ticket-bar"></span></div>
+      <div class="ticket-body">
+        <div class="ticket-head">
           <h3>Re-crawl de contrôle indexation</h3>
-          <span class="chip chip-sev">Bloque la vente</span>
+          <span class="chip chip-sev">Bloque la vente</span> <span class="chip chip-done">Terminé</span>
         </div>
         <p>Relancer le crawl en 1 thread et 1 URL par seconde, user-agent Googlebot Smartphone, puis confronter chaque statut à l&#x27;inspection d&#x27;URL de la Search Console sur 10 URL témoin. L&#x27;extraction du 20/05 classe environ 250 URL en erreur client alors que certaines se positionnent de la 4e à la 8e place : les deux ne peuvent pas être vrais. Ce ticket conditionne la lecture des sept autres.</p>
         <p class="accept"><span class="lbl">Critère d'acceptation</span>nouvel export d&#x27;indexation daté, écart crawl / Search Console expliqué ligne à ligne, ancien onglet renommé « z · Indexation 05-2026 (ancien) ».</p>
@@ -317,7 +332,7 @@
       </div>
     </article>
     <article class="ticket sev-block">
-      <div class="ticket-rail"><span class="ticket-num">02</span><span class="ticket-bar"></span></div>
+      <div class="ticket-rail"><span class="ticket-num">03</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
           <h3>Canonique des fiches produit</h3>
@@ -329,7 +344,7 @@
       </div>
     </article>
     <article class="ticket sev-block">
-      <div class="ticket-rail"><span class="ticket-num">03</span><span class="ticket-bar"></span></div>
+      <div class="ticket-rail"><span class="ticket-num">04</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
           <h3>Lien FAQ vers un formulaire SAV mort</h3>
@@ -340,20 +355,20 @@
         <p class="meta"><span><b>08/09</b></span><span>Eoleaf · Eoleaf</span><span><b>0.5 h</b></span><span><a href="https://docs.google.com/spreadsheets/d/1Xbtiqi8qqxckCMM9tamEXibKGKJnycpl10XoOnbg_0Q/edit">Contact et SAV 12 langues Eoleaf</a></span></p>
       </div>
     </article>
-    <article class="ticket sev-block">
-      <div class="ticket-rail"><span class="ticket-num">04</span><span class="ticket-bar"></span></div>
+    <article class="ticket sev-crawl">
+      <div class="ticket-rail"><span class="ticket-num">05</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
-          <h3>36 pages EN sous le préfixe /fr</h3>
-          <span class="chip chip-sev">Bloque la vente</span>
+          <h3>36 pages EN sous /fr : budget de crawl</h3>
+          <span class="chip chip-sev">Budget de crawl</span>
         </div>
-        <p>Rediriger en 301 les 36 URL anglaises servies sous /fr : vers la page FR équivalente quand elle existe, sinon vers l&#x27;URL anglaise à la racine. Défaut de l&#x27;application de traduction : la page existe en double et Google reçoit de l&#x27;anglais sur une URL déclarée française. Trois anciennes fiches AEROPRO sont dans le lot.</p>
-        <p class="accept"><span class="lbl">Critère d'acceptation</span>les 36 URL répondent 301 en un saut vers la bonne cible, et aucune ne figure plus au sitemap.</p>
-        <p class="meta"><span><b>08/09</b></span><span>Seo Monkey + Eoleaf · Nicolas / Eoleaf</span><span><b>4 h</b></span><span><a href="https://docs.google.com/spreadsheets/d/1dzRHnQFaMkPXW3hvyO_A8-x0JwlwhUAi7MEY7giwvao/edit">Pages EN sous prefixe fr Eoleaf</a></span></p>
+        <p>Rediriger en 301 les 36 URL anglaises servies sous /fr : vers la page FR équivalente quand elle existe, sinon vers l&#x27;URL anglaise à la racine. Périmètre revu par le contrôle Search Console du 04/09 : sur les 33 de ces URL sans impression, 28 ressortent en « Google ne reconnaît pas cette URL ». Elles ne sont donc pas indexées et ne cannibalisent rien. Ce qu&#x27;elles coûtent : du budget de crawl, et des liens internes qui partent dans le vide. Le ticket reste utile mais n&#x27;est plus bloquant, et son volume baisse.</p>
+        <p class="accept"><span class="lbl">Critère d'acceptation</span>les 36 URL répondent 301 en un saut vers la bonne cible, et aucune ne figure plus au sitemap ni dans un lien interne.</p>
+        <p class="meta"><span><b>08/09</b></span><span>Eoleaf · Eoleaf</span><span><b>2 h</b></span><span><a href="https://docs.google.com/spreadsheets/d/1dzRHnQFaMkPXW3hvyO_A8-x0JwlwhUAi7MEY7giwvao/edit">Pages EN sous prefixe fr Eoleaf</a></span></p>
       </div>
     </article>
     <article class="ticket sev-block">
-      <div class="ticket-rail"><span class="ticket-num">05</span><span class="ticket-bar"></span></div>
+      <div class="ticket-rail"><span class="ticket-num">06</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
           <h3>Cannibalisation : 14 clusters FR</h3>
@@ -365,7 +380,7 @@
       </div>
     </article>
     <article class="ticket sev-slow">
-      <div class="ticket-rail"><span class="ticket-num">06</span><span class="ticket-bar"></span></div>
+      <div class="ticket-rail"><span class="ticket-num">07</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
           <h3>33 liens internes rompus</h3>
@@ -377,7 +392,7 @@
       </div>
     </article>
     <article class="ticket sev-slow">
-      <div class="ticket-rail"><span class="ticket-num">07</span><span class="ticket-bar"></span></div>
+      <div class="ticket-rail"><span class="ticket-num">08</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
           <h3>H1 manquants sur 5 gabarits</h3>
@@ -389,7 +404,7 @@
       </div>
     </article>
     <article class="ticket sev-slow">
-      <div class="ticket-rail"><span class="ticket-num">08</span><span class="ticket-bar"></span></div>
+      <div class="ticket-rail"><span class="ticket-num">09</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
           <h3>Images des gabarits d&#x27;achat</h3>
@@ -406,7 +421,7 @@
 
 <section>
   <h2>Ce qui attend en octobre et novembre</h2>
-  <p class="section-note">Treize chantiers, 42 heures estimées. Leur Sheet de travail existe déjà : ils sont prêts à démarrer, seule la place dans le mois manque.</p>
+  <p class="section-note">Treize chantiers, 41 heures estimées. Leur Sheet de travail existe déjà : ils sont prêts à démarrer, seule la place dans le mois manque.</p>
   <div class="scroller">
     <table>
       <caption>Quatre volets du process n'ont jamais été ouverts depuis le début de l'accompagnement : hreflang, vitesse, JSON-LD et maillage interne.</caption>
@@ -415,7 +430,6 @@
       </thead>
       <tbody>
         <tr><td class="mois">OCT · 06</td><td>Hreflang sur 12 langues</td><td>Volet jamais audité, alors que le multilingue produit déjà du trafic (« rökare » en suédois, position 16).</td><td><a href="https://docs.google.com/spreadsheets/d/1MBkbFcXU3orsOy2sg8G5fAnB_hZEP6B-8hDDubPj__8/edit">Hreflang 12 langues Eoleaf</a></td><td class="num">4 h</td></tr>
-        <tr><td class="mois">OCT · 06</td><td>Redirections des anciennes URL AEROPRO</td><td>Ces URL circulent encore et reçoivent des liens internes : sans 301, l&#x27;autorité est perdue et le visiteur tombe sur une page morte.</td><td><a href="https://docs.google.com/spreadsheets/d/1WntNwaXwSKQvZTx6WlzFb1HHujttU6rBjMG_choz6sA/edit">Redirections AEROPRO Eoleaf</a></td><td class="num">1 h</td></tr>
         <tr><td class="mois">OCT · 13</td><td>Doublons de pages de service</td><td>Fusionner les pages de service existant en deux exemplaires, l&#x27;une au slug français, l&#x27;autre au slug anglais sous le même préfixe : garantie, SAV, photos clients, Belgique, ozone.</td><td><a href="https://docs.google.com/spreadsheets/d/1tpgQ9FPnXUAZMuWnQZB57l_3WAbOUC9ISUbq_IfFVxY/edit">Doublons pages service Eoleaf</a></td><td class="num">2 h</td></tr>
         <tr><td class="mois">OCT · 20</td><td>Vitesse par gabarit</td><td>Aucune mesure de vitesse n&#x27;existe à ce jour dans le dossier.</td><td><a href="https://docs.google.com/spreadsheets/d/1QFxHJEqA3_U7PFg_Uk8LAHcUIhfHMoybX7s1n66SvAs/edit">Vitesse par gabarit Eoleaf</a></td><td class="num">2 h</td></tr>
         <tr><td class="mois">OCT · 27</td><td>JSON-LD hors fiche produit</td><td>Périmètre réduit par le contrôle Search Console du 04/09 : la fiche produit porte déjà Product, Offer et AggregateRating, verdict PASS, avec extraits de produit, fiche de marchand et extrait</td><td><a href="https://docs.google.com/spreadsheets/d/1sRODCSAIrNeRLF8Hq6r5Vmflq2jNSXjzzoMZYX2WRo8/edit">JSON-LD par gabarit Eoleaf</a></td><td class="num">3 h</td></tr>
@@ -442,6 +456,11 @@
       </thead>
       <tbody>
         <tr><td class="mois">Indexation</td><td>Pages portant au moins une impression sur 90 jours</td><td class="num">2 994</td><td>Relevé Search Console du 04/09/2026 (03/06 au 01/09). Le crawl du 20/05 en déclarait 39 : il était faux.</td></tr>
+        <tr><td class="mois">Indexation</td><td>URL déclarées non indexées au crawl qui portent en réalité des impressions</td><td class="num">206 sur 305</td><td>Soit 68 %, cumulant 5 748 clics et 562 617 impressions sur 90 jours. Écart expliqué ligne à ligne dans l&#x27;onglet ECART CRAWL 05-2026 du nouvel export.</td></tr>
+        <tr><td class="mois">Indexation</td><td>URL sans impression inspectées une à une</td><td class="num">99</td><td>68 inconnues de Google (formes d&#x27;URL parasites), 21 explorées non indexées, 6 déjà redirigées, 2 indexées sans impression, 2 canoniques ou noindex volontaires.</td></tr>
+        <tr><td class="mois">Indexation</td><td>URL non couvertes par un ticket existant</td><td class="num">8</td><td>Dont 3 unités d&#x27;achat FR explorées et non indexées. Listées dans l&#x27;onglet A ARBITRER.</td></tr>
+        <tr><td class="mois">Indexation</td><td>Slugs anglais sous /fr que Google ne connaît pas</td><td class="num">28 sur 33</td><td>Ces URL ne cannibalisent rien : le ticket passe de bloquant à budget de crawl, de 4 h à 2 h.</td></tr>
+        <tr><td class="mois">Indexation</td><td>Recherche interne /fr/search</td><td class="num">indexée</td><td>Confirmée « Envoyée et indexée ». Le ticket robots.txt est justifié.</td></tr>
         <tr><td class="mois">Indexation</td><td>URL témoin déclarées indexées par Google</td><td class="num">10 sur 10</td><td>Inspection d&#x27;URL du 04/09. Les 6 classées « erreur client » au crawl sont saines : robots autorisé, page récupérée, dernier passage de Google entre le 22/08 et le 04/09.</td></tr>
         <tr><td class="mois">Indexation</td><td>Clics et impressions sur 90 jours</td><td class="num">28 889 · 3 765 160</td><td>Position moyenne 12,5. Le site est massivement indexé et visible.</td></tr>
         <tr><td class="mois">Indexation</td><td>Part du français dans les clics</td><td class="num">21 %</td><td>284 pages FR pour 6 106 clics. Les onze autres langues portent 79 % des clics : la priorisation par langue est à revoir avec Eoleaf.</td></tr>
@@ -483,7 +502,7 @@
   <div class="asks">
     <div class="ask">
       <h3>Le volume d'heures du mois</h3>
-      <p>Septembre est calé sur huit lignes pour 26.5 heures. Le volume contractuel mensuel n'est pas dans le dossier : s'il est inférieur, les tickets 07 et 08 basculent en octobre — ce sont les deux dont le report coûte le moins.</p>
+      <p>Septembre est calé sur huit lignes pour 25.5 heures. Le volume contractuel mensuel n'est pas dans le dossier : s'il est inférieur, les tickets 07 et 08 basculent en octobre — ce sont les deux dont le report coûte le moins.</p>
     </div>
     <div class="ask">
       <h3>L'accès au site pour vérifier</h3>
@@ -499,7 +518,7 @@
 <footer>
   <span>Eoleaf · profil ECOM · Shopify, 12 langues</span>
   <span>Roadmap établie le 04/09/2026</span>
-  <span>21 tickets · 68.5 heures estimées</span>
+  <span>21 tickets · 66.5 heures estimées</span>
   <span>Sheets de travail rangés dans « 2 - Technique / 5 - Mois 5 (septembre) »</span>
 </footer>
 

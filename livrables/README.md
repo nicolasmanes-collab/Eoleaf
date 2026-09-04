@@ -11,10 +11,17 @@ après insertion de 4, 1 et 2 lignes pour faire la place.
 
 L'onglet `Annexes` porte en L15 un lien vers le dossier des 19 livrables.
 
-Attention pour la suite : l'API Google Sheets ne traduit pas les noms de
-fonctions. Sur ce document, en locale française, une formule doit être envoyée
-en `LIEN_HYPERTEXTE(...;...)`. Envoyée en `HYPERLINK(...,...)`, elle rend
-`#ERROR!`.
+Deux pièges rencontrés sur ce document, à ne pas refaire :
+
+1. **L'API Sheets ne traduit pas les noms de fonctions.** Ce document est en
+   locale française : une formule doit être envoyée en
+   `LIEN_HYPERTEXTE(...;...)`. Envoyée en `HYPERLINK(...,...)`, elle rend
+   `#ERROR!`.
+2. **Ne jamais écrire sur un numéro de ligne mémorisé.** Le 04/09, une ligne
+   insérée dans le Sheet entre deux de mes écritures a décalé tout le bloc, et
+   trois titres ont été écrasés sur les mauvaises lignes. Correction : localiser
+   la ligne par le libellé de sa colonne Livrable, qui est stable, puis écrire.
+   C'est ce que fait la réparation, et c'est la méthode à garder.
 
 ## Où vivent les livrables
 
@@ -98,9 +105,36 @@ Deux constats nouveaux, à trancher avec Eoleaf :
 - Les positions de l'onglet sémantique sont à re-sourcer : « purificateur d'air
   professionnel » y figure en position 4, la Search Console la donne en 37.
 
-Reste à faire sur le ticket 01 : le re-crawl outillé, pour reconstituer
-profondeur, orphelines et liens internes. Il ne peut pas se faire depuis
-l'environnement de travail, eoleaf.com y étant bloqué par la politique réseau.
+### Ticket 01 : intégré le 04/09/2026
+
+L'écart est expliqué ligne à ligne, ce qui était le critère d'acceptation :
+
+- 206 des 305 URL déclarées non indexées portent en réalité des impressions,
+  soit 5 748 clics et 562 617 impressions cumulés. Faux positifs.
+- Les 99 restantes ont été inspectées une à une : 68 inconnues de Google (des
+  formes d'URL parasites), 21 explorées non indexées, 6 déjà redirigées,
+  2 indexées sans impression, 2 canoniques ou noindex volontaires.
+- Chaque ligne est rattachée au ticket qui la traite. 8 URL ne relèvent d'aucun
+  ticket et attendent un arbitrage, dont 3 unités d'achat FR explorées et non
+  indexées.
+
+Livrable produit : `Extraction Indexation 09-2026 Eoleaf`, trois onglets
+(PAGES INDEXEES 2 994 lignes, ECART CRAWL 05-2026 305 lignes, A ARBITRER 8
+lignes). L'ancienne extraction est renommée
+`z - Extraction Indexation Eoleaf 05-2026 (ancien, statuts errones)`.
+
+Deux tickets sont revus par ce contrôle :
+
+- **36 pages EN sous /fr** : 28 des 33 URL sans impression sont inconnues de
+  Google. Elles ne cannibalisent rien. Le ticket passe de bloquant à budget de
+  crawl, de 4 h à 2 h, et repasse à Eoleaf.
+- **Robots.txt** : `/fr/search` ressort « Envoyée et indexée ». Confirmé.
+
+Ce qui ne relève pas de ce ticket : profondeur de page, pages orphelines et
+liens internes. La Search Console ne les fournit pas, il faut un crawl, et ces
+trois volets appartiennent au ticket « Profondeur et pages orphelines » daté en
+novembre. Le crawl ne peut pas être lancé depuis l'environnement de travail,
+eoleaf.com y étant bloqué par la politique réseau.
 
 ## Trois réserves à lever
 

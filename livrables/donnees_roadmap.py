@@ -37,14 +37,22 @@ LIV = {
 
 # MOIS, DATE, TICKET, DETAILS, REPARTITION, HEURES, STATUT, LIVRABLE(libellé|url), INTERVENANT, SEVERITE
 SEPTEMBRE = [
- ("SEPTEMBRE", "01/09/2026", "Re-crawl de contrôle indexation",
+ ("SEPTEMBRE", "04/09/2026", "Redirections des anciennes URL AEROPRO",
+  "Poser les 301 des anciennes URL produit AEROPRO 40, 100 et 150 vers les fiches NeoPur 400, "
+  "TeraPur 600 et AltaPur 700. Traité par Nicolas le 04/09/2026, avant l'échéance d'octobre. Le contrôle "
+  "Search Console confirmait le besoin : /fr/products/aeropro-150-airpurifier ressortait en « Explorée, "
+  "actuellement non indexée ». "
+  "Fini quand : chaque ancienne URL répond 301 en un saut vers la fiche du modèle actuel.",
+  "EOLEAF", 1.0, "TERMINE", f"Redirections AEROPRO Eoleaf|{LIV['aeropro']}", "Nicolas", "freine"),
+
+  ("SEPTEMBRE", "01/09/2026", "Re-crawl de contrôle indexation",
   "Relancer le crawl en 1 thread et 1 URL par seconde, user-agent Googlebot Smartphone, puis confronter "
   "chaque statut à l'inspection d'URL de la Search Console sur 10 URL témoin. L'extraction du 20/05 classe "
   "environ 250 URL en erreur client alors que certaines se positionnent de la 4e à la 8e place : les deux "
   "ne peuvent pas être vrais. Ce ticket conditionne la lecture des sept autres. "
   "Fini quand : nouvel export d'indexation daté, écart crawl / Search Console expliqué ligne à ligne, "
   "ancien onglet renommé « z · Indexation 05-2026 (ancien) ».",
-  "SEO MONKEY", 3.0, "EN COURS", f"Controle indexation Eoleaf|{LIV['indexation']}", "Nicolas", "bloque"),
+  "SEO MONKEY", 3.0, "TERMINE", f"Controle indexation Eoleaf|{LIV['indexation']}", "Nicolas", "bloque"),
 
  ("SEPTEMBRE", "01/09/2026", "Canonique des fiches produit",
   "Retenir une seule forme d'URL indexable par produit, poser la canonique autoréférente dessus et aligner "
@@ -65,15 +73,17 @@ SEPTEMBRE = [
   "EOLEAF", 0.5, "A FAIRE", f"Contact et SAV 12 langues Eoleaf|{LIV['contact']}",
   "Eoleaf", "bloque"),
 
- ("SEPTEMBRE", "08/09/2026", "36 pages EN sous le préfixe /fr",
-  "Rediriger en 301 les 36 URL anglaises servies sous /fr : vers la page FR équivalente quand elle existe, "
-  "sinon vers l'URL anglaise à la racine. Défaut de l'application de traduction : la page existe en double "
-  "et Google reçoit de l'anglais sur une URL déclarée française. Trois anciennes fiches AEROPRO sont dans "
-  "le lot. "
+ ("SEPTEMBRE", "08/09/2026", "36 pages EN sous /fr : budget de crawl",
+  "Rediriger en 301 les 36 URL anglaises servies sous /fr : vers la page FR équivalente quand elle "
+  "existe, sinon vers l'URL anglaise à la racine. "
+  "Périmètre revu par le contrôle Search Console du 04/09 : sur les 33 de ces URL sans impression, 28 "
+  "ressortent en « Google ne reconnaît pas cette URL ». Elles ne sont donc pas indexées et ne "
+  "cannibalisent rien. Ce qu'elles coûtent : du budget de crawl, et des liens internes qui partent dans "
+  "le vide. Le ticket reste utile mais n'est plus bloquant, et son volume baisse. "
   "Fini quand : les 36 URL répondent 301 en un saut vers la bonne cible, et aucune ne figure plus au "
-  "sitemap.",
-  "SEO MONKEY + EOLEAF", 4.0, "A FAIRE", f"Pages EN sous prefixe fr Eoleaf|{LIV['pages_en']}",
-  "Nicolas / Eoleaf", "bloque"),
+  "sitemap ni dans un lien interne.",
+  "EOLEAF", 2.0, "A FAIRE", f"Pages EN sous prefixe fr Eoleaf|{LIV['pages_en']}",
+  "Eoleaf", "crawl"),
 
  ("SEPTEMBRE", "15/09/2026", "Cannibalisation : 14 clusters FR",
   "Désigner un pilier par cluster, fusionner les doublons d'intention dans ce pilier puis poser les 301. "
@@ -119,13 +129,6 @@ OCTOBRE = [
   "Fini quand : chaque URL porte le jeu complet et réciproque plus x-default, et zéro page en langue "
   "étrangère sous /fr.",
   "SEO MONKEY", 4.0, "A FAIRE", f"Hreflang 12 langues Eoleaf|{LIV['hreflang']}", "Nicolas", "freine"),
-
- ("OCTOBRE", "06/10/2026", "Redirections des anciennes URL AEROPRO",
-  "Poser les 301 des anciennes URL produit AEROPRO 40, 100 et 150 vers les fiches NeoPur 400, TeraPur 600 "
-  "et AltaPur 700. Ces URL circulent encore et reçoivent des liens internes : sans 301, l'autorité est "
-  "perdue et le visiteur tombe sur une page morte. "
-  "Fini quand : chaque ancienne URL répond 301 en un saut vers la fiche du modèle actuel.",
-  "EOLEAF", 1.0, "A FAIRE", f"Redirections AEROPRO Eoleaf|{LIV['aeropro']}", "Eoleaf", "freine"),
 
  ("OCTOBRE", "13/10/2026", "Doublons de pages de service",
   "Fusionner les pages de service existant en deux exemplaires, l'une au slug français, l'autre au slug "
@@ -220,6 +223,18 @@ BACKLOG = OCTOBRE + NOVEMBRE
 CONSTATS = [
  ("Indexation", "Pages portant au moins une impression sur 90 jours", "2 994",
   "Relevé Search Console du 04/09/2026 (03/06 au 01/09). Le crawl du 20/05 en déclarait 39 : il était faux."),
+ ("Indexation", "URL déclarées non indexées au crawl qui portent en réalité des impressions", "206 sur 305",
+  "Soit 68 %, cumulant 5 748 clics et 562 617 impressions sur 90 jours. Écart expliqué ligne à ligne "
+  "dans l'onglet ECART CRAWL 05-2026 du nouvel export."),
+ ("Indexation", "URL sans impression inspectées une à une", "99",
+  "68 inconnues de Google (formes d'URL parasites), 21 explorées non indexées, 6 déjà redirigées, "
+  "2 indexées sans impression, 2 canoniques ou noindex volontaires."),
+ ("Indexation", "URL non couvertes par un ticket existant", "8",
+  "Dont 3 unités d'achat FR explorées et non indexées. Listées dans l'onglet A ARBITRER."),
+ ("Indexation", "Slugs anglais sous /fr que Google ne connaît pas", "28 sur 33",
+  "Ces URL ne cannibalisent rien : le ticket passe de bloquant à budget de crawl, de 4 h à 2 h."),
+ ("Indexation", "Recherche interne /fr/search", "indexée",
+  "Confirmée « Envoyée et indexée ». Le ticket robots.txt est justifié."),
  ("Indexation", "URL témoin déclarées indexées par Google", "10 sur 10",
   "Inspection d'URL du 04/09. Les 6 classées « erreur client » au crawl sont saines : robots autorisé, "
   "page récupérée, dernier passage de Google entre le 22/08 et le 04/09."),

@@ -24,19 +24,20 @@ def coupe(details):
 
 
 def ticket(num, t):
-    mois, date, titre, details, repartition, heures, _statut, livrable, intervenant, severite = t
+    mois, date, titre, details, repartition, heures, statut, livrable, intervenant, severite = t
     corps, critere = coupe(details)
     lib, _, url = livrable.partition("|") if livrable else ("", "", "")
     liv_html = (f'<span><a href="{E(url)}">{E(lib)}</a></span>' if url
                 else '<span>livrable : pages HTML</span>')
     bloc_critere = (f'<p class="accept"><span class="lbl">Critère d\'acceptation</span>{E(critere)}</p>'
                     if critere else "")
-    return f"""    <article class="ticket {CLASSE[severite]}">
+    fini = ' <span class="chip chip-done">Terminé</span>' if statut == "TERMINE" else ""
+    return f"""    <article class="ticket {CLASSE[severite]}{' is-done' if statut == 'TERMINE' else ''}">
       <div class="ticket-rail"><span class="ticket-num">{num:02d}</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
           <h3>{E(titre)}</h3>
-          <span class="chip chip-sev">{CHIP[severite]}</span>
+          <span class="chip chip-sev">{CHIP[severite]}</span>{fini}
         </div>
         <p>{E(corps)}</p>
         {bloc_critere}
