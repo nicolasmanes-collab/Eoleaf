@@ -2,6 +2,20 @@
 
 Établie le 04/09/2026 par SEO Monkey. 21 tickets, 71 heures estimées.
 
+## Où c'est écrit
+
+Les 21 tickets sont dans le Sheet de pilotage, onglet `Technique` : septembre
+en L24-31, octobre en L32-37, novembre en L38-44. La colonne Mois, fusionnée
+par bloc, n'a pas été touchée ; seules les colonnes B à F ont été écrites,
+après insertion de 4, 1 et 2 lignes pour faire la place.
+
+L'onglet `Annexes` porte en L15 un lien vers le dossier des 19 livrables.
+
+Attention pour la suite : l'API Google Sheets ne traduit pas les noms de
+fonctions. Sur ce document, en locale française, une formule doit être envoyée
+en `LIEN_HYPERTEXTE(...;...)`. Envoyée en `HYPERLINK(...,...)`, elle rend
+`#ERROR!`.
+
 ## Où vivent les livrables
 
 Les 19 Sheets de travail sont sur le Drive client, dans
@@ -38,7 +52,7 @@ extractions existantes : libellés de colonnes en ligne 1, bandeau
 | Fichier | À quoi il sert |
 |---|---|
 | `2026-09-04-roadmap-technique-septembre-eoleaf.xlsx` | Le classeur. ROADMAP TECHNIQUE (septembre), BACKLOG OCT-NOV, CONSTATS CHIFFRES. |
-| `a-coller-onglet-technique.tsv` | Les 21 lignes au format exact de l'onglet technique du Sheet de pilotage. La colonne Livrable porte une formule `LIEN_HYPERTEXTE` : si le Sheet est en locale anglaise, remplacer par `HYPERLINK` et le point-virgule par une virgule. |
+| `a-coller-onglet-technique.tsv` | Les 21 lignes au format exact de l'onglet technique. Devenu un filet de sécurité : les 21 lignes ont été écrites directement dans le Sheet de pilotage le 04/09/2026 (onglet `Technique`, L24 à L44). La colonne Livrable porte `LIEN_HYPERTEXTE` avec un point-virgule, syntaxe confirmée pour ce document — il est en locale française. |
 | `roadmap-technique-eoleaf-complet.tsv` | Les 21 tickets au format du modèle, colonnes DETAILS, REPARTITION, HEURE DE TRAVAIL, LIVRABLE et SEVERITE comprises. |
 | `roadmap-septembre.html` | La roadmap en page lisible, publiée en artifact. |
 | `donnees_roadmap.py` | Source de vérité des tickets et des constats. On modifie ici, puis on régénère. |
