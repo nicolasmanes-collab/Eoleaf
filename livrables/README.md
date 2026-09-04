@@ -68,14 +68,39 @@ Tout se régénère par :
 python3 construire_roadmap.py && python3 construire_page.py && python3 vers_csv.py
 ```
 
-## Le point qui change la lecture du dossier
+## Le contrôle Search Console du 04/09/2026
 
-L'extraction d'indexation du 20/05 classe environ 250 URL en « erreur client »,
-dont des pages que l'onglet sémantique donne en position 4 à 8. Une page morte
-ne se classe pas. La cause probable est un rejet Shopify sous la charge du
-crawl. Tant que ce n'est pas tranché, les 39 « pages indexées », la liste des
-orphelines et le décompte des erreurs sont à refaire : c'est le premier ticket
-de septembre, et il conditionne les sept autres.
+Fait via l'API sur la propriété `sc-domain:eoleaf.com`. Le détail est dans le
+Sheet `Controle indexation Eoleaf`, onglet `CONTROLE INDEXATION`.
+
+Le crawl du 20/05 était faux. Il déclarait 39 pages indexées et environ 250 URL
+en erreur client ; la Search Console compte 2 994 pages portant au moins une
+impression sur 90 jours, 28 889 clics et 3 765 160 impressions, position moyenne
+12,5. Les 10 URL témoin sont toutes « Envoyée et indexée », robots autorisé,
+page récupérée, dernier passage de Google entre le 22/08 et le 04/09.
+
+Trois tickets en sortent modifiés :
+
+- **Page contact** : les pages contact FR, EN et DE sont saines, la FR est en
+  position 2,2 avec 477 impressions. Seule `/fr/pages/formulaire-apres-vente`
+  est morte. Ticket ramené de 2 h à 30 min et confié à Eoleaf.
+- **JSON-LD** : la fiche produit porte déjà Product, Offer et AggregateRating,
+  verdict PASS. Ticket ramené de 4 h à 3 h, périmètre réduit à l'accueil, la
+  catégorie, les pages métier et la FAQ.
+- **Sitemap** : 6 des 10 URL témoin ne sont pas déclarées au sitemap, dont
+  l'accueil FR et la fiche AltaPur 700. Le ticket gagne en importance.
+
+Deux constats nouveaux, à trancher avec Eoleaf :
+
+- Le français ne porte que 21 % des clics. Les onze autres langues en font 79 %,
+  et la page la plus cliquée du site est allemande
+  (`/de/pages/kauf-eines-luftreinigers-fur-cannabis`, 928 clics).
+- Les positions de l'onglet sémantique sont à re-sourcer : « purificateur d'air
+  professionnel » y figure en position 4, la Search Console la donne en 37.
+
+Reste à faire sur le ticket 01 : le re-crawl outillé, pour reconstituer
+profondeur, orphelines et liens internes. Il ne peut pas se faire depuis
+l'environnement de travail, eoleaf.com y étant bloqué par la politique réseau.
 
 ## Trois réserves à lever
 

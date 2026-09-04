@@ -131,6 +131,8 @@
     border-radius:3px;padding:20px 22px;margin-top:30px;
     display:flex;flex-direction:column;gap:10px;
   }
+  .caveat-ok{background:var(--accent-soft);border-left-color:var(--accent)}
+  .caveat-ok h3{color:var(--accent)}
   .caveat h3{
     font-family:"Archivo",sans-serif;font-size:.94rem;font-weight:600;
     letter-spacing:.01em;margin:0;color:var(--sev-slow);
@@ -259,25 +261,40 @@
 <header class="masthead">
   <p class="eyebrow">Eoleaf · SEO Monkey · établie le 4 septembre 2026</p>
   <h1>Roadmap technique de septembre</h1>
-  <p class="standfirst">Vingt-et-un chantiers ouverts, dont <strong>huit en septembre</strong> pour 28 heures estimées, dans leur ordre d'exécution. L'ordre n'est pas décoratif : ce qui empêche une page de vendre passe avant ce qui la freine, et le budget de crawl vient en dernier. Chaque ticket porte son Sheet de travail, avec les URL, les valeurs relevées et les corrections déjà rédigées.</p>
+  <p class="standfirst">Vingt-et-un chantiers ouverts, dont <strong>huit en septembre</strong> pour 26.5 heures estimées, dans leur ordre d'exécution. L'ordre n'est pas décoratif : ce qui empêche une page de vendre passe avant ce qui la freine, et le budget de crawl vient en dernier. Chaque ticket porte son Sheet de travail, avec les URL, les valeurs relevées et les corrections déjà rédigées.</p>
 
   <dl class="figures">
+    <div class="figure"><dt>Pages indexées · GSC 90 j</dt><dd>2 994</dd></div>
+    <div class="figure"><dt>Clics hors français</dt><dd>79 <span>%</span></dd></div>
     <div class="figure"><dt>Clusters en cannibalisation</dt><dd>14</dd></div>
     <div class="figure"><dt>Pages EN sous /fr</dt><dd>36</dd></div>
-    <div class="figure"><dt>Images · poids total</dt><dd>91,3 <span>Mo</span></dd></div>
     <div class="figure"><dt>Balises ALT vides</dt><dd>57 <span>% (192/334)</span></dd></div>
-    <div class="figure"><dt>Volets jamais ouverts</dt><dd>4 <span>sur 7</span></dd></div>
   </dl>
 </header>
 
 <section>
-  <h2>Ce qu'il faut trancher avant de croire un chiffre d'indexation</h2>
-  <p class="section-note">Deux données du dossier se contredisent, et l'une des deux est fausse. Le dire maintenant coûte moins cher que de bâtir un trimestre de travail dessus.</p>
+  <h2>Ce que la Search Console a tranché, le 4 septembre</h2>
+  <p class="section-note">Deux données du dossier se contredisaient. La Search Console dit laquelle était fausse, et trois tickets en sortent modifiés.</p>
 
-  <div class="caveat">
-    <h3>L'extraction d'indexation du 20/05/2026 n'est pas exploitable en l'état</h3>
-    <p>Elle classe environ 250 URL en « erreur client », dont des pages que l'onglet sémantique donne en position 4 à 8 sur leur requête cible — <code>acheter-un-purificateur-dair-de-qualite-medicale</code> en 7<sup>e</sup>, <code>ioniseurs-a-quoi-servent-ils</code> en 8<sup>e</sup>. Une page morte ne se classe pas. La cause la plus probable est un rejet Shopify sous la charge du crawl, pas un site cassé.</p>
-    <p>Conséquence pratique : les 39 « pages indexées » relevées, la liste des orphelines et le décompte des erreurs sont tous à refaire. C'est le premier ticket du mois, et il conditionne la lecture des sept autres.</p>
+  <div class="caveat caveat-ok">
+    <h3>Le crawl du 20/05/2026 était faux : le site est massivement indexé</h3>
+    <p>Il déclarait 39 pages indexées et environ 250 URL en « erreur client ». La Search Console compte <strong>2 994 pages portant au moins une impression</strong> sur les 90 derniers jours, pour 28 889 clics et 3,77 M d'impressions. Les dix URL témoin ressortent toutes en « Envoyée et indexée », robots.txt autorisé, page récupérée avec succès, dernier passage de Google entre le 22 août et le 4 septembre. Y compris les six que le crawl donnait mortes.</p>
+    <p>C'était bien un rejet Shopify sous la charge du crawl. Le re-crawl outillé reste à passer pour reconstituer profondeur, orphelines et liens internes — il ne peut pas se faire depuis cet environnement, eoleaf.com y étant bloqué — mais plus aucune décision n'attend ce chiffre.</p>
+  </div>
+
+  <div class="asks" style="margin-top:16px">
+    <div class="ask">
+      <h3>Le contact n'était pas cassé</h3>
+      <p>Les pages contact FR, EN et DE sont indexées et saines. La FR est même en position 2,2 avec 477 impressions. Seule <code>/fr/pages/formulaire-apres-vente</code> est réellement morte, et la FAQ y renvoie. Le ticket tombe de 2 h à 30 min.</p>
+    </div>
+    <div class="ask">
+      <h3>La fiche produit a déjà son JSON-LD</h3>
+      <p>Google y détecte Product, Offer et AggregateRating, verdict PASS, avec extraits de produit, fiche de marchand et extraits d'avis. Le gabarit qui encaisse est équipé : le ticket ne porte plus que l'accueil, la catégorie, les pages métier et la FAQ.</p>
+    </div>
+    <div class="ask">
+      <h3>Le français n'est pas le sujet principal</h3>
+      <p>284 pages FR pour 6 106 clics, soit 21 % du total. Les onze autres langues en portent 79 %, et la page la plus cliquée du site est allemande — <code>kauf-eines-luftreinigers-fur-cannabis</code>, 928 clics. La priorisation par langue est à revoir avec Eoleaf.</p>
+    </div>
   </div>
 </section>
 
@@ -315,12 +332,12 @@
       <div class="ticket-rail"><span class="ticket-num">03</span><span class="ticket-bar"></span></div>
       <div class="ticket-body">
         <div class="ticket-head">
-          <h3>Page contact et formulaire SAV</h3>
+          <h3>Lien FAQ vers un formulaire SAV mort</h3>
           <span class="chip chip-sev">Bloque la vente</span>
         </div>
-        <p>Rendre accessibles /fr/pages/contact (erreur client au crawl) et /fr/pages/formulaire-apres-vente (404, appelé depuis la FAQ), et vérifier les 12 versions linguistiques du gabarit. Une page contact injoignable sur un site qui vend en B2B coûte des demandes entrantes chaque jour.</p>
-        <p class="accept"><span class="lbl">Critère d'acceptation</span>les 12 URL contact et les 12 URL SAV répondent 200, et le lien depuis la FAQ pointe vers l&#x27;URL vivante sans redirection intermédiaire.</p>
-        <p class="meta"><span><b>08/09</b></span><span>Seo Monkey + Eoleaf · Nicolas / Eoleaf</span><span><b>2 h</b></span><span><a href="https://docs.google.com/spreadsheets/d/1Xbtiqi8qqxckCMM9tamEXibKGKJnycpl10XoOnbg_0Q/edit">Contact et SAV 12 langues Eoleaf</a></span></p>
+        <p>Poser une 301 de /fr/pages/formulaire-apres-vente vers /fr/pages/formulaire-sav et corriger le lien depuis /fr/pages/faqs. Périmètre réduit par le contrôle Search Console du 04/09 : les pages contact FR, EN et DE sont indexées et saines, la FR est même en position 2,2 avec 477 impressions. Le crawl du 20/05 les déclarait en erreur à tort. Seule l&#x27;URL formulaire-apres-vente est réellement morte.</p>
+        <p class="accept"><span class="lbl">Critère d'acceptation</span>/fr/pages/formulaire-apres-vente répond 301 vers formulaire-sav, et la FAQ pointe directement vers l&#x27;URL vivante.</p>
+        <p class="meta"><span><b>08/09</b></span><span>Eoleaf · Eoleaf</span><span><b>0.5 h</b></span><span><a href="https://docs.google.com/spreadsheets/d/1Xbtiqi8qqxckCMM9tamEXibKGKJnycpl10XoOnbg_0Q/edit">Contact et SAV 12 langues Eoleaf</a></span></p>
       </div>
     </article>
     <article class="ticket sev-block">
@@ -389,7 +406,7 @@
 
 <section>
   <h2>Ce qui attend en octobre et novembre</h2>
-  <p class="section-note">Treize chantiers, 43 heures estimées. Leur Sheet de travail existe déjà : ils sont prêts à démarrer, seule la place dans le mois manque.</p>
+  <p class="section-note">Treize chantiers, 42 heures estimées. Leur Sheet de travail existe déjà : ils sont prêts à démarrer, seule la place dans le mois manque.</p>
   <div class="scroller">
     <table>
       <caption>Quatre volets du process n'ont jamais été ouverts depuis le début de l'accompagnement : hreflang, vitesse, JSON-LD et maillage interne.</caption>
@@ -401,7 +418,7 @@
         <tr><td class="mois">OCT · 06</td><td>Redirections des anciennes URL AEROPRO</td><td>Ces URL circulent encore et reçoivent des liens internes : sans 301, l&#x27;autorité est perdue et le visiteur tombe sur une page morte.</td><td><a href="https://docs.google.com/spreadsheets/d/1WntNwaXwSKQvZTx6WlzFb1HHujttU6rBjMG_choz6sA/edit">Redirections AEROPRO Eoleaf</a></td><td class="num">1 h</td></tr>
         <tr><td class="mois">OCT · 13</td><td>Doublons de pages de service</td><td>Fusionner les pages de service existant en deux exemplaires, l&#x27;une au slug français, l&#x27;autre au slug anglais sous le même préfixe : garantie, SAV, photos clients, Belgique, ozone.</td><td><a href="https://docs.google.com/spreadsheets/d/1tpgQ9FPnXUAZMuWnQZB57l_3WAbOUC9ISUbq_IfFVxY/edit">Doublons pages service Eoleaf</a></td><td class="num">2 h</td></tr>
         <tr><td class="mois">OCT · 20</td><td>Vitesse par gabarit</td><td>Aucune mesure de vitesse n&#x27;existe à ce jour dans le dossier.</td><td><a href="https://docs.google.com/spreadsheets/d/1QFxHJEqA3_U7PFg_Uk8LAHcUIhfHMoybX7s1n66SvAs/edit">Vitesse par gabarit Eoleaf</a></td><td class="num">2 h</td></tr>
-        <tr><td class="mois">OCT · 27</td><td>JSON-LD par gabarit</td><td>Rien n&#x27;a été posé à ce jour.</td><td><a href="https://docs.google.com/spreadsheets/d/1sRODCSAIrNeRLF8Hq6r5Vmflq2jNSXjzzoMZYX2WRo8/edit">JSON-LD par gabarit Eoleaf</a></td><td class="num">4 h</td></tr>
+        <tr><td class="mois">OCT · 27</td><td>JSON-LD hors fiche produit</td><td>Périmètre réduit par le contrôle Search Console du 04/09 : la fiche produit porte déjà Product, Offer et AggregateRating, verdict PASS, avec extraits de produit, fiche de marchand et extrait</td><td><a href="https://docs.google.com/spreadsheets/d/1sRODCSAIrNeRLF8Hq6r5Vmflq2jNSXjzzoMZYX2WRo8/edit">JSON-LD par gabarit Eoleaf</a></td><td class="num">3 h</td></tr>
         <tr><td class="mois">OCT · 27</td><td>Sitemap contre pages réelles</td><td>Vérifier aussi la couverture des 12 langues et la déclaration dans robots.txt.</td><td><a href="https://docs.google.com/spreadsheets/d/1RMWs2FaTOHIcXs-frPj4xF-mshvxdZOUMCwOwZFjIM4/edit">Sitemap contre pages Eoleaf</a></td><td class="num">2 h</td></tr>
         <tr><td class="mois">NOV · 03</td><td>Robots.txt et URL à paramètres</td><td>Ces URL consomment du budget de crawl sans rien rapporter</td><td><a href="https://docs.google.com/spreadsheets/d/1oggu_W80Xm-SyQFoyOxGFYEndqvmYiSMBZCJs3GVmqQ/edit">Robots et parametres Eoleaf</a></td><td class="num">1 h</td></tr>
         <tr><td class="mois">NOV · 03</td><td>Liens sortants rompus</td><td>Environ 200 liens sortants en échec : 404 en majorité, 22 en 410, 12 en 503, et une cinquantaine d&#x27;URL invalides saisies dans le contenu</td><td><a href="https://docs.google.com/spreadsheets/d/13rEU2zMOXDBtBzwUjTdmn7_Q6JqiLZnW1IZKj82nd5w/edit">Liens sortants a remplacer Eoleaf</a></td><td class="num">3 h</td></tr>
@@ -424,8 +441,15 @@
         <tr><th scope="col">Volet</th><th scope="col">Ce qui est mesuré</th><th scope="col">Valeur</th><th scope="col">Ce que cela implique</th></tr>
       </thead>
       <tbody>
-        <tr><td class="mois">Indexation</td><td>Pages relevées comme indexées au crawl du 20/05/2026</td><td class="num">39</td><td>Incohérent avec les positions de l&#x27;onglet sémantique : à confronter à la Search Console.</td></tr>
-        <tr><td class="mois">Indexation</td><td>URL classées en erreur client au crawl du 20/05/2026</td><td class="num">environ 250</td><td>Dont des pages positionnées de la 4e à la 8e place. Rejet Shopify sous charge suspecté.</td></tr>
+        <tr><td class="mois">Indexation</td><td>Pages portant au moins une impression sur 90 jours</td><td class="num">2 994</td><td>Relevé Search Console du 04/09/2026 (03/06 au 01/09). Le crawl du 20/05 en déclarait 39 : il était faux.</td></tr>
+        <tr><td class="mois">Indexation</td><td>URL témoin déclarées indexées par Google</td><td class="num">10 sur 10</td><td>Inspection d&#x27;URL du 04/09. Les 6 classées « erreur client » au crawl sont saines : robots autorisé, page récupérée, dernier passage de Google entre le 22/08 et le 04/09.</td></tr>
+        <tr><td class="mois">Indexation</td><td>Clics et impressions sur 90 jours</td><td class="num">28 889 · 3 765 160</td><td>Position moyenne 12,5. Le site est massivement indexé et visible.</td></tr>
+        <tr><td class="mois">Indexation</td><td>Part du français dans les clics</td><td class="num">21 %</td><td>284 pages FR pour 6 106 clics. Les onze autres langues portent 79 % des clics : la priorisation par langue est à revoir avec Eoleaf.</td></tr>
+        <tr><td class="mois">Indexation</td><td>Page la plus cliquée du site</td><td class="num">/de/pages/kauf-eines-luftreinigers-fur-cannabis</td><td>928 clics et 10 216 impressions sur 90 jours. Elle est en allemand.</td></tr>
+        <tr><td class="mois">Indexation</td><td>URL témoin absentes du sitemap</td><td class="num">6 sur 10</td><td>Dont l&#x27;accueil FR, la fiche AltaPur 700 et deux unités d&#x27;achat. Elles rankent sans être déclarées.</td></tr>
+        <tr><td class="mois">Indexation</td><td>URL déclarées au sitemap</td><td class="num">3 001</td><td>Dernier téléchargement par Google le 03/09/2026, zéro erreur, zéro avertissement.</td></tr>
+        <tr><td class="mois">Sémantique</td><td>Écart de position relevé sur l&#x27;onglet sémantique</td><td class="num">position 4 contre 37</td><td>« purificateur d&#x27;air professionnel » : l&#x27;onglet donne 4, la Search Console 37 avec 894 impressions et 3 clics. Les positions de l&#x27;onglet sémantique sont à re-sourcer.</td></tr>
+        <tr><td class="mois">JSON-LD</td><td>Fiche produit</td><td class="num">Product, Offer et AggregateRating présents</td><td>Verdict PASS au 04/09. Le gabarit qui encaisse est déjà équipé, contrairement au constat initial.</td></tr>
         <tr><td class="mois">Indexation</td><td>Versions linguistiques du site</td><td class="num">12</td><td>fr, en à la racine, da, de, es, fi, it, nl, no, pl, ro, sv. Une correction de gabarit se propage.</td></tr>
         <tr><td class="mois">Indexation</td><td>URL anglaises servies sous le préfixe /fr</td><td class="num">36</td><td>Duplication et mauvaise langue déclarée. Défaut de l&#x27;application de traduction.</td></tr>
         <tr><td class="mois">Indexation</td><td>Anciennes URL produit AEROPRO encore en circulation</td><td class="num">7</td><td>La gamme a été renommée NeoPur, TeraPur, AltaPur sans que les 301 soient posées.</td></tr>
@@ -444,7 +468,7 @@
         <tr><td class="mois">Maillage</td><td>Liens sortants en échec</td><td class="num">environ 200</td><td>404 en majorité, 22 en 410, 12 en 503, une cinquantaine d&#x27;URL invalides saisies dans le contenu.</td></tr>
         <tr><td class="mois">Maillage</td><td>Plan de maillage interne existant</td><td class="num">aucun</td><td>L&#x27;onglet « Pages orphelines » de l&#x27;extraction indexation est vide.</td></tr>
         <tr><td class="mois">Vitesse</td><td>Relevé Lighthouse par gabarit</td><td class="num">aucun</td><td>Volet jamais ouvert depuis le début de l&#x27;accompagnement.</td></tr>
-        <tr><td class="mois">JSON-LD</td><td>Données structurées relevées</td><td class="num">aucune</td><td>Product, Offer, Organization, BreadcrumbList et FAQPage attendus sur un site marchand.</td></tr>
+        <tr><td class="mois">JSON-LD</td><td>Accueil, catégorie, page métier et FAQ</td><td class="num">aucun type enrichi détecté</td><td>Organization, CollectionPage, Article et FAQPage restent à poser.</td></tr>
         <tr><td class="mois">Hreflang</td><td>Audit hreflang réalisé</td><td class="num">aucun</td><td>12 langues en production, et des pages en anglais servies sous /fr.</td></tr>
         <tr><td class="mois">Géo</td><td>Pages ville en production</td><td class="num">5 dont 1 en anglais</td><td>Lyon en position 6, Paris en 18, Londres en 16, Paris EN en 7. Couche non structurée.</td></tr>
         <tr><td class="mois">Comparatifs</td><td>Pages comparant Eoleaf à un concurrent</td><td class="num">13</td><td>Fort potentiel d&#x27;achat : Levoit en position 20 sur 390, « dyson chauffant » en 9 sur 1900.</td></tr>
@@ -459,7 +483,7 @@
   <div class="asks">
     <div class="ask">
       <h3>Le volume d'heures du mois</h3>
-      <p>Septembre est calé sur huit lignes pour 28 heures. Le volume contractuel mensuel n'est pas dans le dossier : s'il est inférieur, les tickets 07 et 08 basculent en octobre — ce sont les deux dont le report coûte le moins.</p>
+      <p>Septembre est calé sur huit lignes pour 26.5 heures. Le volume contractuel mensuel n'est pas dans le dossier : s'il est inférieur, les tickets 07 et 08 basculent en octobre — ce sont les deux dont le report coûte le moins.</p>
     </div>
     <div class="ask">
       <h3>L'accès au site pour vérifier</h3>
@@ -475,7 +499,7 @@
 <footer>
   <span>Eoleaf · profil ECOM · Shopify, 12 langues</span>
   <span>Roadmap établie le 04/09/2026</span>
-  <span>21 tickets · 71 heures estimées</span>
+  <span>21 tickets · 68.5 heures estimées</span>
   <span>Sheets de travail rangés dans « 2 - Technique / 5 - Mois 5 (septembre) »</span>
 </footer>
 

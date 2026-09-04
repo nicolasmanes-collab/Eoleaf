@@ -44,7 +44,7 @@ SEPTEMBRE = [
   "ne peuvent pas être vrais. Ce ticket conditionne la lecture des sept autres. "
   "Fini quand : nouvel export d'indexation daté, écart crawl / Search Console expliqué ligne à ligne, "
   "ancien onglet renommé « z · Indexation 05-2026 (ancien) ».",
-  "SEO MONKEY", 3.0, "A FAIRE", f"Controle indexation Eoleaf|{LIV['indexation']}", "Nicolas", "bloque"),
+  "SEO MONKEY", 3.0, "EN COURS", f"Controle indexation Eoleaf|{LIV['indexation']}", "Nicolas", "bloque"),
 
  ("SEPTEMBRE", "01/09/2026", "Canonique des fiches produit",
   "Retenir une seule forme d'URL indexable par produit, poser la canonique autoréférente dessus et aligner "
@@ -55,14 +55,15 @@ SEPTEMBRE = [
   "« Tableau de balisage » corrigé avant intégration.",
   "SEO MONKEY", 2.0, "A FAIRE", f"Canonique fiches produit Eoleaf|{LIV['canonique']}", "Nicolas", "bloque"),
 
- ("SEPTEMBRE", "08/09/2026", "Page contact et formulaire SAV",
-  "Rendre accessibles /fr/pages/contact (erreur client au crawl) et /fr/pages/formulaire-apres-vente (404, "
-  "appelé depuis la FAQ), et vérifier les 12 versions linguistiques du gabarit. Une page contact "
-  "injoignable sur un site qui vend en B2B coûte des demandes entrantes chaque jour. "
-  "Fini quand : les 12 URL contact et les 12 URL SAV répondent 200, et le lien depuis la FAQ pointe vers "
-  "l'URL vivante sans redirection intermédiaire.",
-  "SEO MONKEY + EOLEAF", 2.0, "A FAIRE", f"Contact et SAV 12 langues Eoleaf|{LIV['contact']}",
-  "Nicolas / Eoleaf", "bloque"),
+ ("SEPTEMBRE", "08/09/2026", "Lien FAQ vers un formulaire SAV mort",
+  "Poser une 301 de /fr/pages/formulaire-apres-vente vers /fr/pages/formulaire-sav et corriger le lien "
+  "depuis /fr/pages/faqs. Périmètre réduit par le contrôle Search Console du 04/09 : les pages contact FR, "
+  "EN et DE sont indexées et saines, la FR est même en position 2,2 avec 477 impressions. Le crawl du 20/05 "
+  "les déclarait en erreur à tort. Seule l'URL formulaire-apres-vente est réellement morte. "
+  "Fini quand : /fr/pages/formulaire-apres-vente répond 301 vers formulaire-sav, et la FAQ pointe "
+  "directement vers l'URL vivante.",
+  "EOLEAF", 0.5, "A FAIRE", f"Contact et SAV 12 langues Eoleaf|{LIV['contact']}",
+  "Eoleaf", "bloque"),
 
  ("SEPTEMBRE", "08/09/2026", "36 pages EN sous le préfixe /fr",
   "Rediriger en 301 les 36 URL anglaises servies sous /fr : vers la page FR équivalente quand elle existe, "
@@ -140,12 +141,15 @@ OCTOBRE = [
   "seuil.",
   "SEO MONKEY", 2.0, "A FAIRE", f"Vitesse par gabarit Eoleaf|{LIV['vitesse']}", "Nicolas", "freine"),
 
- ("OCTOBRE", "27/10/2026", "JSON-LD par gabarit",
-  "Écrire et intégrer le balisage de données structurées prêt à coller : Product et Offer sur la fiche "
-  "produit, Organization sur l'accueil, BreadcrumbList partout, FAQPage sur la FAQ, Article sur les pages "
-  "métier. Rien n'a été posé à ce jour. "
-  "Fini quand : le test des résultats enrichis ne remonte aucune erreur sur chacun des gabarits.",
-  "SEO MONKEY + EOLEAF", 4.0, "A FAIRE", f"JSON-LD par gabarit Eoleaf|{LIV['jsonld']}",
+ ("OCTOBRE", "27/10/2026", "JSON-LD hors fiche produit",
+  "Écrire et intégrer le balisage de données structurées pour l'accueil (Organization, WebSite), la "
+  "catégorie (CollectionPage, ItemList), les pages métier (Article, Person) et la FAQ (FAQPage). "
+  "Périmètre réduit par le contrôle Search Console du 04/09 : la fiche produit porte déjà Product, Offer et "
+  "AggregateRating, verdict PASS, avec extraits de produit, fiche de marchand et extraits d'avis détectés. "
+  "Réserve : l'inspection d'URL ne remonte que les types éligibles aux résultats enrichis, l'absence de "
+  "BreadcrumbList reste à confirmer dans le code des gabarits. "
+  "Fini quand : le test des résultats enrichis ne remonte aucune erreur sur les quatre gabarits restants.",
+  "SEO MONKEY + EOLEAF", 3.0, "A FAIRE", f"JSON-LD par gabarit Eoleaf|{LIV['jsonld']}",
   "Nicolas / Eoleaf", "freine"),
 
  ("OCTOBRE", "27/10/2026", "Sitemap contre pages réelles",
@@ -214,10 +218,27 @@ NOVEMBRE = [
 BACKLOG = OCTOBRE + NOVEMBRE
 
 CONSTATS = [
- ("Indexation", "Pages relevées comme indexées au crawl du 20/05/2026", "39",
-  "Incohérent avec les positions de l'onglet sémantique : à confronter à la Search Console."),
- ("Indexation", "URL classées en erreur client au crawl du 20/05/2026", "environ 250",
-  "Dont des pages positionnées de la 4e à la 8e place. Rejet Shopify sous charge suspecté."),
+ ("Indexation", "Pages portant au moins une impression sur 90 jours", "2 994",
+  "Relevé Search Console du 04/09/2026 (03/06 au 01/09). Le crawl du 20/05 en déclarait 39 : il était faux."),
+ ("Indexation", "URL témoin déclarées indexées par Google", "10 sur 10",
+  "Inspection d'URL du 04/09. Les 6 classées « erreur client » au crawl sont saines : robots autorisé, "
+  "page récupérée, dernier passage de Google entre le 22/08 et le 04/09."),
+ ("Indexation", "Clics et impressions sur 90 jours", "28 889 · 3 765 160",
+  "Position moyenne 12,5. Le site est massivement indexé et visible."),
+ ("Indexation", "Part du français dans les clics", "21 %",
+  "284 pages FR pour 6 106 clics. Les onze autres langues portent 79 % des clics : la priorisation par "
+  "langue est à revoir avec Eoleaf."),
+ ("Indexation", "Page la plus cliquée du site", "/de/pages/kauf-eines-luftreinigers-fur-cannabis",
+  "928 clics et 10 216 impressions sur 90 jours. Elle est en allemand."),
+ ("Indexation", "URL témoin absentes du sitemap", "6 sur 10",
+  "Dont l'accueil FR, la fiche AltaPur 700 et deux unités d'achat. Elles rankent sans être déclarées."),
+ ("Indexation", "URL déclarées au sitemap", "3 001",
+  "Dernier téléchargement par Google le 03/09/2026, zéro erreur, zéro avertissement."),
+ ("Sémantique", "Écart de position relevé sur l'onglet sémantique", "position 4 contre 37",
+  "« purificateur d'air professionnel » : l'onglet donne 4, la Search Console 37 avec 894 impressions et "
+  "3 clics. Les positions de l'onglet sémantique sont à re-sourcer."),
+ ("JSON-LD", "Fiche produit", "Product, Offer et AggregateRating présents",
+  "Verdict PASS au 04/09. Le gabarit qui encaisse est déjà équipé, contrairement au constat initial."),
  ("Indexation", "Versions linguistiques du site", "12",
   "fr, en à la racine, da, de, es, fi, it, nl, no, pl, ro, sv. Une correction de gabarit se propage."),
  ("Indexation", "URL anglaises servies sous le préfixe /fr", "36",
@@ -254,8 +275,8 @@ CONSTATS = [
   "L'onglet « Pages orphelines » de l'extraction indexation est vide."),
  ("Vitesse", "Relevé Lighthouse par gabarit", "aucun",
   "Volet jamais ouvert depuis le début de l'accompagnement."),
- ("JSON-LD", "Données structurées relevées", "aucune",
-  "Product, Offer, Organization, BreadcrumbList et FAQPage attendus sur un site marchand."),
+ ("JSON-LD", "Accueil, catégorie, page métier et FAQ", "aucun type enrichi détecté",
+  "Organization, CollectionPage, Article et FAQPage restent à poser."),
  ("Hreflang", "Audit hreflang réalisé", "aucun",
   "12 langues en production, et des pages en anglais servies sous /fr."),
  ("Géo", "Pages ville en production", "5 dont 1 en anglais",

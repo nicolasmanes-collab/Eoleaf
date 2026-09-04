@@ -81,22 +81,37 @@ def main():
   <p class="standfirst">Vingt-et-un chantiers ouverts, dont <strong>huit en septembre</strong> pour {h_sept:g} heures estimées, dans leur ordre d'exécution. L'ordre n'est pas décoratif : ce qui empêche une page de vendre passe avant ce qui la freine, et le budget de crawl vient en dernier. Chaque ticket porte son Sheet de travail, avec les URL, les valeurs relevées et les corrections déjà rédigées.</p>
 
   <dl class="figures">
+    <div class="figure"><dt>Pages indexées · GSC 90 j</dt><dd>2 994</dd></div>
+    <div class="figure"><dt>Clics hors français</dt><dd>79 <span>%</span></dd></div>
     <div class="figure"><dt>Clusters en cannibalisation</dt><dd>14</dd></div>
     <div class="figure"><dt>Pages EN sous /fr</dt><dd>36</dd></div>
-    <div class="figure"><dt>Images · poids total</dt><dd>91,3 <span>Mo</span></dd></div>
     <div class="figure"><dt>Balises ALT vides</dt><dd>57 <span>% (192/334)</span></dd></div>
-    <div class="figure"><dt>Volets jamais ouverts</dt><dd>4 <span>sur 7</span></dd></div>
   </dl>
 </header>
 
 <section>
-  <h2>Ce qu'il faut trancher avant de croire un chiffre d'indexation</h2>
-  <p class="section-note">Deux données du dossier se contredisent, et l'une des deux est fausse. Le dire maintenant coûte moins cher que de bâtir un trimestre de travail dessus.</p>
+  <h2>Ce que la Search Console a tranché, le 4 septembre</h2>
+  <p class="section-note">Deux données du dossier se contredisaient. La Search Console dit laquelle était fausse, et trois tickets en sortent modifiés.</p>
 
-  <div class="caveat">
-    <h3>L'extraction d'indexation du 20/05/2026 n'est pas exploitable en l'état</h3>
-    <p>Elle classe environ 250 URL en « erreur client », dont des pages que l'onglet sémantique donne en position 4 à 8 sur leur requête cible — <code>acheter-un-purificateur-dair-de-qualite-medicale</code> en 7<sup>e</sup>, <code>ioniseurs-a-quoi-servent-ils</code> en 8<sup>e</sup>. Une page morte ne se classe pas. La cause la plus probable est un rejet Shopify sous la charge du crawl, pas un site cassé.</p>
-    <p>Conséquence pratique : les 39 « pages indexées » relevées, la liste des orphelines et le décompte des erreurs sont tous à refaire. C'est le premier ticket du mois, et il conditionne la lecture des sept autres.</p>
+  <div class="caveat caveat-ok">
+    <h3>Le crawl du 20/05/2026 était faux : le site est massivement indexé</h3>
+    <p>Il déclarait 39 pages indexées et environ 250 URL en « erreur client ». La Search Console compte <strong>2 994 pages portant au moins une impression</strong> sur les 90 derniers jours, pour 28 889 clics et 3,77 M d'impressions. Les dix URL témoin ressortent toutes en « Envoyée et indexée », robots.txt autorisé, page récupérée avec succès, dernier passage de Google entre le 22 août et le 4 septembre. Y compris les six que le crawl donnait mortes.</p>
+    <p>C'était bien un rejet Shopify sous la charge du crawl. Le re-crawl outillé reste à passer pour reconstituer profondeur, orphelines et liens internes — il ne peut pas se faire depuis cet environnement, eoleaf.com y étant bloqué — mais plus aucune décision n'attend ce chiffre.</p>
+  </div>
+
+  <div class="asks" style="margin-top:16px">
+    <div class="ask">
+      <h3>Le contact n'était pas cassé</h3>
+      <p>Les pages contact FR, EN et DE sont indexées et saines. La FR est même en position 2,2 avec 477 impressions. Seule <code>/fr/pages/formulaire-apres-vente</code> est réellement morte, et la FAQ y renvoie. Le ticket tombe de 2 h à 30 min.</p>
+    </div>
+    <div class="ask">
+      <h3>La fiche produit a déjà son JSON-LD</h3>
+      <p>Google y détecte Product, Offer et AggregateRating, verdict PASS, avec extraits de produit, fiche de marchand et extraits d'avis. Le gabarit qui encaisse est équipé : le ticket ne porte plus que l'accueil, la catégorie, les pages métier et la FAQ.</p>
+    </div>
+    <div class="ask">
+      <h3>Le français n'est pas le sujet principal</h3>
+      <p>284 pages FR pour 6 106 clics, soit 21 % du total. Les onze autres langues en portent 79 %, et la page la plus cliquée du site est allemande — <code>kauf-eines-luftreinigers-fur-cannabis</code>, 928 clics. La priorisation par langue est à revoir avec Eoleaf.</p>
+    </div>
   </div>
 </section>
 

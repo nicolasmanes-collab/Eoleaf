@@ -1,7 +1,7 @@
 Mois	Semaine	Brief technique	Livrable	Intervenant	Statut
 SEPTEMBRE	01/09/2026	Re-crawl de contrôle indexation	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1b_tVRfcWzqweKpb5L30yiDJtstaU5D82CE6gUWNYrEo/edit";"Controle indexation Eoleaf")	Nicolas	A faire
 SEPTEMBRE	01/09/2026	Canonique des fiches produit	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1-n0jKORE6XE_sI7gnLOe5n5orXDtGtnIVFIc24ttoHs/edit";"Canonique fiches produit Eoleaf")	Nicolas	A faire
-SEPTEMBRE	08/09/2026	Page contact et formulaire SAV	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1Xbtiqi8qqxckCMM9tamEXibKGKJnycpl10XoOnbg_0Q/edit";"Contact et SAV 12 langues Eoleaf")	Nicolas / Eoleaf	A faire
+SEPTEMBRE	08/09/2026	Lien FAQ vers un formulaire SAV mort	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1Xbtiqi8qqxckCMM9tamEXibKGKJnycpl10XoOnbg_0Q/edit";"Contact et SAV 12 langues Eoleaf")	Eoleaf	A faire
 SEPTEMBRE	08/09/2026	36 pages EN sous le préfixe /fr	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1dzRHnQFaMkPXW3hvyO_A8-x0JwlwhUAi7MEY7giwvao/edit";"Pages EN sous prefixe fr Eoleaf")	Nicolas / Eoleaf	A faire
 SEPTEMBRE	15/09/2026	Cannibalisation : 14 clusters FR	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1KzD2Mf-ugn3jPmKIFoYTrXalEtu1VyeoZof5pAkUwyc/edit";"Cannibalisation clusters FR Eoleaf")	Jordan / Nicolas	A faire
 SEPTEMBRE	22/09/2026	33 liens internes rompus	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1c7_Bu5rdkz9TmV9wHW_I_RJsEEtkrmIMETtDe1oxpRM/edit";"liens internes rompus")	Eoleaf	A faire
@@ -11,7 +11,7 @@ OCTOBRE	06/10/2026	Hreflang sur 12 langues	=LIEN_HYPERTEXTE("https://docs.google
 OCTOBRE	06/10/2026	Redirections des anciennes URL AEROPRO	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1WntNwaXwSKQvZTx6WlzFb1HHujttU6rBjMG_choz6sA/edit";"Redirections AEROPRO Eoleaf")	Eoleaf	A faire
 OCTOBRE	13/10/2026	Doublons de pages de service	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1tpgQ9FPnXUAZMuWnQZB57l_3WAbOUC9ISUbq_IfFVxY/edit";"Doublons pages service Eoleaf")	Eoleaf	A faire
 OCTOBRE	20/10/2026	Vitesse par gabarit	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1QFxHJEqA3_U7PFg_Uk8LAHcUIhfHMoybX7s1n66SvAs/edit";"Vitesse par gabarit Eoleaf")	Nicolas	A faire
-OCTOBRE	27/10/2026	JSON-LD par gabarit	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1sRODCSAIrNeRLF8Hq6r5Vmflq2jNSXjzzoMZYX2WRo8/edit";"JSON-LD par gabarit Eoleaf")	Nicolas / Eoleaf	A faire
+OCTOBRE	27/10/2026	JSON-LD hors fiche produit	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1sRODCSAIrNeRLF8Hq6r5Vmflq2jNSXjzzoMZYX2WRo8/edit";"JSON-LD par gabarit Eoleaf")	Nicolas / Eoleaf	A faire
 OCTOBRE	27/10/2026	Sitemap contre pages réelles	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1RMWs2FaTOHIcXs-frPj4xF-mshvxdZOUMCwOwZFjIM4/edit";"Sitemap contre pages Eoleaf")	Nicolas	A faire
 NOVEMBRE	03/11/2026	Robots.txt et URL à paramètres	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1oggu_W80Xm-SyQFoyOxGFYEndqvmYiSMBZCJs3GVmqQ/edit";"Robots et parametres Eoleaf")	Nicolas / Eoleaf	A faire
 NOVEMBRE	03/11/2026	Liens sortants rompus	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/13rEU2zMOXDBtBzwUjTdmn7_Q6JqiLZnW1IZKj82nd5w/edit";"Liens sortants a remplacer Eoleaf")	Jordan / Eoleaf	A faire
