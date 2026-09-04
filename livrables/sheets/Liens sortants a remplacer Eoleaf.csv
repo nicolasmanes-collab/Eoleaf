@@ -1,0 +1,26 @@
+PAGE FR,LIEN SORTANT ROMPU,CODE,SOURCE DE REMPLACEMENT PROPOSEE,STATUT
+"Important ⚠️ : environ 200 liens sortants ne répondent plus sur l'ensemble du site. Sur des pages qui citent des sources scientifiques, un lien mort abîme le signal de fiabilité. Les pages FR sont traitées d'abord ; chaque erreur étant répliquée sur les 12 langues, une correction en français se propage. Cinquante URL sont invalides dès la saisie (http://., http://ozone).",,,,
+/fr/pages/comment-fonctionnent-les-filtres-hepa,cdc.gov/niosh/docs/96-101/default.html,404,"Fiche NIOSH actuelle sur les respirateurs et filtres, ou norme EN 1822 pour la classification HEPA",A FAIRE
+/fr/pages/tout-ce-que-vous-devez-savoir-sur-les-composes-organiques-volatils-cov,apis.ac.uk/overview/pollutants/overview_vocs.htm,404,"Page COV de l'Agence européenne pour l'environnement, ou fiche ANSES",A FAIRE
+/fr/pages/quest-ce-que-lozone-tropospherique,cdc.gov/niosh/topics/ozone/default.html,404,Fiche ozone de l'OMS ou de l'Agence européenne pour l'environnement,A FAIRE
+/fr/pages/les-differences-entre-les-purificateurs-dair-et-les-humidificateurs,sleepopolis.com/education/how-does-a-humidifier-work/,404,Source institutionnelle plutôt qu'un site affilié : fiche humidité intérieure de l'ANSES,A FAIRE
+/fr/pages/les-differences-entre-un-purificateur-dair-et-un-climatiseur,homeairguides.com/air-purifier-vs-air-conditioner/,404,Fiche ADEME sur la qualité de l'air intérieur et la climatisation,A FAIRE
+/fr/pages/purificateurs-dair-eoleaf-vs-winix,winixamerica.com/2019/08/07/hr900-ultimate-pet-air-purifier/,404,"Fiche produit Winix actuelle, ou retirer le lien vers le concurrent",A FAIRE
+/fr/pages/acheter-un-purificateur-dair-en-belgique,prb.org/international/indicator/urban/snapshot,404,Données d'urbanisation de la Banque mondiale ou d'Eurostat,A FAIRE
+/fr/pages/acheter-un-purificateur-dair-au-luxembourg,prb.org/international/indicator/urban/snapshot,404,Idem,A FAIRE
+/fr/pages/protegez-vos-enfants-de-la-pollution-de-lair-interieur,airpurifiers.com/6-ways-to-protect-children-from-air-pollution/,404,Rapport OMS sur la pollution de l'air et la santé des enfants,A FAIRE
+/fr/pages/oxydes-dazote-dans-la-pollution-de-lair-risques-pour-la-sante...,doi.org/10.1590/1414-431X2015439,404,"Vérifier le DOI : s'il est valide, corriger la saisie ; sinon, citer une étude équivalente",A FAIRE
+/fr/pages/dormez-mieux-en-installant-un-purificateur-dair-dans-votre-chambre,stallergenesgreer.com/uk/what-respiratory-allergy,404,Fiche allergies respiratoires de l'Assurance maladie ou de l'INSERM,A FAIRE
+/fr/pages/installer-un-capteur-de-co2-dans-votre-maison...,workinmind.org/2018/12/05/une-etude-reveals-c02-levels...,404,URL manifestement corrompue : retrouver l'étude d'origine sur le CO2 en bureau ou la retirer,A FAIRE
+/fr/pages/purificateurs-dair-a-lozone-et-generateurs-dozone-ce-quil-faut-savoir,eea.europa.eu/help/glossary/eea-glossary/ozone-depleting-substance,410,Glossaire actuel de l'Agence européenne pour l'environnement,A FAIRE
+/fr/pages/tout-savoir-sur-les-particules-fines-pm,eea.europa.eu/themes/air/urban-air-quality,410,Page qualité de l'air urbain actuelle de l'AEE,A FAIRE
+/fr/pages/acheter-un-purificateur-dair-pour-un-restaurant,nateosante.com/en/business-solutions/...,503,"Lien vers un concurrent direct : à retirer, pas à remplacer",A FAIRE
+/fr/pages/tout-savoir-sur-la-sterilisation-uvc,http://ozone,URL invalide,Saisie tronquée : retrouver la source visée ou retirer le lien,A FAIRE
+/fr/pages/acheter-un-purificateur-dair-pour-la-toux,http://.,URL invalide,Saisie vide : retirer le lien,A FAIRE
+/fr/pages/acheter-un-purificateur-dair-pour-les-odeurs,ehp.niehs.nih.gov/doi/10.1289/ehp.1510037,Inaccessible,"Vérifier l'accès : la revue peut bloquer les robots. Si l'article existe, conserver le lien",A FAIRE
+/fr/pages/acheter-un-purificateur-dair-contre-le-vapotage,factor.niehs.nih.gov/2022/2/feature/3-feature-e-cigarettes-and-toxic-metals,Inaccessible,Idem : vérifier avant de remplacer,A FAIRE
+/fr/pages/la-qualite-de-lair-et-les-differentes-formes-de-pollution-de-lair,particuliers.promotelec.com/fiche-habitat/qualite-de-lair-interieur...,Inaccessible,Fiche qualité de l'air intérieur de l'ADEME,A FAIRE
+,,,,
+METHODE,"Corriger la source dans la page FR, puis répliquer la correction sur les 11 autres langues : le même lien mort y figure",,,
+REGLE,"Un lien vers un concurrent direct (Nateosante, Winix) se retire, il ne se remplace pas",,,
+PRIORITE,Les pages portant des impressions d'abord : voir les positions de l'onglet sémantique,,,

@@ -1,0 +1,15 @@
+GABARIT,URL TEMOIN,LCP MOBILE,INP,CLS,SCORE PERF,POIDS PAGE,VERDICT,PREMIER LEVIER,STATUT
+"Important ⚠️ : la vitesse se mesure par gabarit, pas URL par URL : un gabarit corrigé corrige toutes ses pages. Aucune mesure n'existe à ce jour dans le dossier, alors que 91,3 Mo d'images laissent attendre un LCP dégradé. Mobile d'abord. Seuils : LCP sous 2,5 s, INP sous 200 ms, CLS sous 0,1.",,,,,,,,,
+Accueil,/fr,,,,,,,"Image fr_qualite_d_air à 2,9 Mo",A FAIRE
+Catégorie,/fr/collections/purificateurs-air,,,,,,,Vignettes produit en PNG,A FAIRE
+Fiche produit,/fr/products/purificateur-air-purcar,,,,,,,"6 visuels PNG entre 3,0 et 3,6 Mo",A FAIRE
+Page métier,/fr/pages/acheter-un-purificateur-dair-hepa,,,,,,,À relever,A FAIRE
+Question,/fr/pages/comment-fonctionnent-les-filtres-hepa,,,,,,,À relever,A FAIRE
+Géo,/fr/pages/qualite-de-lair-a-lyon,,,,,,,À relever,A FAIRE
+,,,,,,,,,
+SEUIL,LCP,INP,CLS,,,,,,
+Bon,"moins de 2,5 s",moins de 200 ms,"moins de 0,1",,,,,,
+A améliorer,"2,5 à 4 s",200 à 500 ms,"0,1 à 0,25",,,,,,
+Mauvais,plus de 4 s,plus de 500 ms,"plus de 0,25",,,,,,
+,,,,,,,,,
+ORDRE DE PRIORITE,Le gabarit fiche produit passe avant le score global du site : c'est lui qui encaisse,,,,,,,,

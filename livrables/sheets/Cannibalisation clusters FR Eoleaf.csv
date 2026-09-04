@@ -1,0 +1,51 @@
+CLUSTER,REQUETE PRINCIPALE,VOLUME,URL,POSITION CONNUE,ROLE PROPOSE,DECISION,STATUT
+"Important ⚠️ : quand deux pages visent la même intention, Google en choisit une et dilue les deux. L'onglet sémantique en porte la preuve : « purificateur d'air voiture » y est planifié sur 3 URL différentes, « purificateur d'air chambre » sur 2, « purificateur d'air allergie chat » sur 2, « aspirateur de fumée de cigarette » sur 2. Un pilier par cluster, le reste fusionne ou redirige.",,,,,,,
+Voiture,purificateur d'air voiture,210,/fr/collections/purificateur-air-voiture-pure-car,non relevée,Catégorie : reste la porte d'entrée commerciale,Conserver,A FAIRE
+Voiture,purificateur d'air voiture,210,/fr/products/purificateur-air-purcar,20,Fiche produit : unité d'achat,Conserver,A FAIRE
+Voiture,purificateur d'air voiture,210,/fr/pages/acheter-un-purificateur-dair-pour-la-voiture,5,PILIER de cluster,Conserver et lier vers la fiche PurCar,A FAIRE
+Voiture,purificateur d'air voiture,210,/fr/pages/installer-un-purificateur-dair-dans-votre-voiture,16,Doublon d'intention,Fusionner dans le pilier puis 301,A FAIRE
+Chambre et sommeil,purificateur d air chambre,170,/fr/pages/acheter-un-purificateur-dair-pour-votre-chambre,7,PILIER de cluster,Conserver,A FAIRE
+Chambre et sommeil,purificateur d'air chambre,170,/fr/pages/dormez-mieux-en-installant-un-purificateur-dair-dans-votre-chambre,7,Doublon d'intention,Fusionner dans le pilier puis 301,A FAIRE
+Chambre et sommeil,purificateur d'air pour dormir,non relevé,/fr/pages/acheter-un-purificateur-dair-pour-dormir,non relevée,Doublon d'intention,Fusionner dans le pilier puis 301,A FAIRE
+Allergies animaux,purificateur d'air allergie chat,140,/fr/pages/acheter-un-purificateur-dair-pour-les-allergies-aux-animaux-de-compagnie,13,PILIER de cluster,Conserver,A FAIRE
+Allergies animaux,purificateur d'air allergie chat,140,/fr/pages/comment-un-purificateur-dair-peut-aider-avec-les-allergies-aux-animaux,19,Doublon d'intention,Fusionner dans le pilier puis 301,A FAIRE
+Allergies animaux,purificateur d'air animaux,110,/fr/pages/comment-eliminer-les-odeurs-danimaux-de-votre-maison,5,Question satellite : conserver,Conserver et lier vers le pilier,A FAIRE
+Allergies animaux,URL cassée,non applicable,/fr/pages/acheter-un-purificateur-dair-pour-les-allergies-aux-animaux-de-compagnie=,non applicable,Signe égal parasite dans un lien interne,Corriger le lien source puis 301,A FAIRE
+Fumée de tabac,aspirateur fumée cigarette,390,/fr/pages/acheter-un-purificateur-dair-pour-la-fumee-de-cigarettes,5,PILIER de cluster,Conserver,A FAIRE
+Fumée de tabac,aspirateur de fumée de cigarette,260,/fr/pages/acheter-un-purificateur-dair-contre-la-fumee-de-cigare,20,Doublon d'intention,Fusionner dans le pilier puis 301,A FAIRE
+Fumée de tabac,fumée cigare,non relevé,/fr/pages/acheter-un-purificateur-dair-pour-la-fumee-de-cigare,non relevée,Doublon du doublon : deux slugs pour le cigare,Fusionner dans le pilier puis 301,A FAIRE
+Fumée de tabac,protéger ses poumons,non relevé,/fr/pages/utiliser-un-purificateur-dair-pour-proteger-vos-poumons-de-la-fumee-de-cigarette,non relevée,Doublon d'intention,Fusionner dans le pilier puis 301,A FAIRE
+Fumée de tabac,fumée cigarette,260,/fr/pages/comment-le-tabagisme-contribue-a-la-pollution-de-lair,6,Question satellite : conserver,Conserver et lier vers le pilier,A FAIRE
+Dentaire,purificateur d'air dentiste,non relevé,/fr/pages/acheter-un-purificateur-dair-pour-les-cabinets-dentaires,non relevée,PILIER de cluster,Conserver,A FAIRE
+Dentaire,purificateur d'air dentiste,non relevé,/fr/pages/acheter-un-purificateur-dair-pour-les-dentistes-purificateurs-dair-dentaires,non relevée,Doublon d'intention,Fusionner dans le pilier puis 301,A FAIRE
+Dentaire,purificateur d'air dentiste,non relevé,/fr/pages/acheter-un-purificateur-dair-pour-cabinets-de-dentistes-assainisseurs-dair-dentaires,non relevée,Troisième page sur la même intention,Fusionner dans le pilier puis 301,A FAIRE
+Salon de coiffure,purificateur d'air salon de coiffure,non relevé,/fr/pages/acheter-un-purificateur-dair-pour-salon-de-coiffure,non relevée,PILIER de cluster,Conserver,A FAIRE
+Salon de coiffure,purificateur d'air salon de coiffure,non relevé,/fr/pages/acheter-un-purificateur-dair-pour-les-salons-de-coiffure,non relevée,Doublon au pluriel,Fusionner dans le pilier puis 301,A FAIRE
+Poussière et acariens,purificateur d'air poussière,590,/fr/pages/acheter-un-purificateur-dair-pour-la-poussiere,10,PILIER de cluster,Conserver,A FAIRE
+Poussière et acariens,purificateur d'air acariens,non relevé,/fr/pages/acheter-un-purificateur-dair-pour-les-acariens,non relevée,Doublon d'intention,Fusionner dans le pilier puis 301,A FAIRE
+Poussière et acariens,acariens de poussière,170,/fr/pages/comment-utiliser-les-purificateurs-dair-pour-lutter-contre-les-allergies-a-la-poussiere-e-aux-acariens,19,Question satellite : conserver mais slug fautif (« e-aux »),"Conserver, corriger le slug avec 301",A FAIRE
+Professionnel et industriel,purificateur d'air professionnel,590,/fr/collections/purificateurs-air,4,Catégorie : porte d'entrée commerciale,Conserver,A FAIRE
+Professionnel et industriel,purificateur professionnel,210,/fr/pages/acheter-un-purificateur-dair-professionnel,4,PILIER éditorial du cluster,Conserver et lier vers la catégorie,A FAIRE
+Professionnel et industriel,purificateur d'air industriel,260,/fr/pages/acheter-un-purificateur-dair-industriel,12,Intention distincte : conserver,Conserver et lier vers le pilier,A FAIRE
+Professionnel et industriel,grand espace,non relevé,/fr/pages/acheter-un-purificateur-dair-commercial-pour-un-grand-espace,non relevée,Doublon d'intention avec industriel,Fusionner puis 301,A FAIRE
+Professionnel et industriel,professionnels,non relevé,/fr/pages/professionnels,non relevée,Page institutionnelle B2B : rôle à clarifier,"Conserver, H1 à poser, lier vers le pilier",A FAIRE
+HEPA,purificateur d'air hepa,880,/fr/pages/acheter-un-purificateur-dair-hepa,5,PILIER commercial du cluster,Conserver,A FAIRE
+HEPA,filtre hepa,2900,/fr/pages/comment-fonctionnent-les-filtres-hepa,6,Question pilier : conserver,Conserver et lier vers le pilier commercial,A FAIRE
+HEPA,purificateur d air hepa,880,/fr/,19,L'accueil est planifié sur la même requête que le pilier,Retirer cette cible de l'accueil : elle appartient au pilier,A FAIRE
+Charbon actif,purificateur d'air charbon actif,170,/fr/pages/acheter-un-purificateur-dair-au-charbon,4,PILIER commercial du cluster,Conserver,A FAIRE
+Charbon actif,filtration par charbon actif,110,/fr/pages/quest-ce-que-la-filtration-au-charbon-actif,15,Question pilier : conserver,Conserver et lier vers le pilier,A FAIRE
+Charbon actif,charbon actif filtration air,non relevé,/fr/pages/le-charbon-actif-et-son-role-dans-la-filtration-de-lair,non relevée,Doublon de la question pilier,Fusionner puis 301,A FAIRE
+Ozone,générateur d'ozone,480,/fr/pages/purificateurs-dair-a-lozone-et-generateurs-dozone-ce-quil-faut-savoir,4,PILIER de cluster,Conserver,A FAIRE
+Ozone,générateur d'ozone,480,/fr/pages/purificateurs-et-generateurs-a-lozone-ce-quil-faut-savoir,non relevée,"Doublon quasi identique : deux slugs, un sujet",Fusionner puis 301,A FAIRE
+Ionisation,ionisation de l'air,480,/fr/pages/tout-savoir-sur-lionisation,8,PILIER de cluster,Conserver,A FAIRE
+Ionisation,ioniseur d'air,1900,/fr/pages/ioniseurs-a-quoi-servent-ils,8,Intention distincte : conserver,Conserver et lier vers le pilier,A FAIRE
+Ionisation,ion s,260,/fr/pages/les-ions-negatifs-et-leurs-bienfaits-pour-notre-sante,11,Question satellite : conserver,Conserver et lier vers le pilier,A FAIRE
+Choix du purificateur,meilleur purificateur air,320,/fr/pages/choisir-le-meilleur-purificateur-dair-pour-100-m2,5,Intention surface : conserver,Conserver,A FAIRE
+Choix du purificateur,comment choisir un purificateur d'air,non relevé,/fr/pages/guide-dachat-comment-choisir-un-purificateur-dair,non relevée,PILIER de cluster : le guide d'achat,Conserver,A FAIRE
+Choix du purificateur,comment choisir le meilleur purificateur,non relevé,/fr/pages/comment-choisir-le-meilleur-purificateur-dair,non relevée,Doublon du guide d'achat,Fusionner dans le guide puis 301,A FAIRE
+Choix du purificateur,plus grand est-il meilleur,non relevé,/fr/pages/un-purificateur-dair-plus-grand-est-il-forcement-meilleur,non relevée,Question satellite : conserver,Conserver et lier vers le guide,A FAIRE
+Vapotage,purificateur d'air vapotage,non relevé,/fr/pages/acheter-un-purificateur-dair-contre-le-vapotage,non relevée,PILIER de cluster,Conserver,A FAIRE
+Vapotage,risques du vapotage passif,non relevé,/fr/pages/les-risques-du-vapotage-et-du-vapotage-passif,non relevée,Question satellite : conserver,Conserver et lier vers le pilier,A FAIRE
+,,,,,,,
+REGLE APPLIQUEE,Une page en top 3 ne se touche pas : à vérifier au contrôle GSC du ticket 01 avant toute fusion,,,,,,
+,"Une fusion se fait dans ce sens : le contenu utile remonte dans le pilier, PUIS la 301 est posée",,,,,,

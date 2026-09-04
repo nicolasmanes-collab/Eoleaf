@@ -1,0 +1,20 @@
+URL TEMOIN,GABARIT,REQUETE CIBLE,POSITION CONNUE,STATUT CRAWL 20/05,STATUT GSC A RELEVER,STATUT RE-CRAWL,VERDICT,ACTION,STATUT
+"Important ⚠️ : le crawl du 20/05/2026 classe environ 250 URL en erreur client, dont des pages positionnées de la 4e à la 8e place sur leur requête cible. Une page morte ne se classe pas. On tranche ici avec la Search Console avant de bâtir la roadmap dessus. Re-crawl à passer en 1 thread / 1 URL par seconde / user-agent Googlebot Smartphone.",,,,,,,,,
+https://eoleaf.com/fr,Accueil,purificateur d air hepa,19,Indexée,,,,,A FAIRE
+https://eoleaf.com/fr/collections/purificateurs-air,Catégorie,purificateur d'air professionnel,4,Indexée,,,,,A FAIRE
+https://eoleaf.com/fr/products/purificateur-air-altapur-700,Fiche produit,Eoleaf Altapur 700,non relevée,Indexée,,,,,A FAIRE
+https://eoleaf.com/fr/pages/comment-fonctionnent-les-filtres-hepa,Question,filtre hepa,6,Indexée,,,,,A FAIRE
+https://eoleaf.com/fr/pages/ioniseurs-a-quoi-servent-ils,Question,ioniseur d'air,8,Erreur client,,,Contradiction à lever,,A FAIRE
+https://eoleaf.com/fr/pages/acheter-un-purificateur-dair-de-qualite-medicale,Unité d'achat,purificateur d'air avis medical,7,Erreur client,,,Contradiction à lever,,A FAIRE
+https://eoleaf.com/fr/pages/acheter-un-purificateur-dair-hepa,Unité d'achat,purificateur d'air hepa,5,Erreur client,,,Contradiction à lever,,A FAIRE
+https://eoleaf.com/fr/pages/acheter-un-purificateur-dair-pour-la-poussiere,Unité d'achat,purificateur d'air poussière,10,Erreur client,,,Contradiction à lever,,A FAIRE
+https://eoleaf.com/fr/pages/qualite-de-lair-a-lyon,Géo,qualité de l air lyon,6,Erreur client,,,Contradiction à lever,,A FAIRE
+https://eoleaf.com/fr/pages/contact,Contact,non applicable,non applicable,Erreur client,,,À confirmer : panne réelle probable,Voir ticket Page contact et formulaire SAV,A FAIRE
+,,,,,,,,,
+PARAMETRES DU RE-CRAWL,VALEUR A UTILISER,MOTIF,,,,,,,
+Threads simultanés,1,"Au-delà, Shopify rejette les requêtes et le crawl invente des 4xx",,,,,,,
+Limite de vitesse,1 URL par seconde,Idem,,,,,,,
+User-agent,Googlebot Smartphone,"Voir le site comme Google le voit, mobile d'abord",,,,,,,
+Rendu JavaScript,Activé,Thème Shopify : une partie du contenu est injectée,,,,,,,
+Périmètre,"eoleaf.com, toutes langues",12 versions en production,,,,,,,
+Contrôle croisé,Inspection d'URL GSC sur les 10 URL témoin,Seule source qui dit ce que Google a réellement indexé,,,,,,,

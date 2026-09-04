@@ -1,0 +1,16 @@
+MOTIF,CHEMIN OU PARAMETRE,EXEMPLE RELEVE,DIRECTIVE A POSER,STATUT
+"Important ⚠️ : chaque URL inutile crawlée est du budget que Google ne passe pas sur les pages qui vendent. Le crawl remonte des URL de recherche interne, de panier, d'application tierce et des URL à paramètres. Une directive dans robots.txt suffit à les fermer.",,,,
+Recherche interne,/search,/fr/search,Disallow: /*/search,A FAIRE
+Panier,/cart,/fr/cart,Disallow: /*/cart,A FAIRE
+Compte client,/account,à confirmer,Disallow: /*/account,A FAIRE
+Application tierce,/apps/,/apps/vf-product-reco/2t6d2b2b,Disallow: /apps/,A FAIRE
+Liste par fournisseur,/collections/vendors,/fr/collections/vendors?q=Eoleaf,Disallow: /*/collections/vendors,A FAIRE
+Paramètre de recherche,?q=,/fr/collections/vendors?page=2&q=Eoleaf,Disallow: /*?*q=,A FAIRE
+Paramètre Google Shopping,?srsltid=,/pages/learning-centre?srsltid=AfmBOoq...,Disallow: /*?*srsltid=,A FAIRE
+Paramètre de redirection,?redirected=true,/fr/pages/quest-ce-que-la-filtration-au-charbon-actif?redirected=true,Disallow: /*?*redirected=,A FAIRE
+Paramètre inconnu,?ose=,/pages/why-is-it-important-to-change-the-filter...?ose=false,Disallow: /*?*ose=,A FAIRE
+Pagination de collection,?page=,/fr/collections/all?page=2,"À NE PAS interdire : laisser crawler, canonique autoréférente sur chaque page",A FAIRE
+Déclaration du sitemap,,,Sitemap: https://eoleaf.com/sitemap.xml,A FAIRE
+,,,,
+POINT DE VIGILANCE,"Shopify gère un robots.txt éditable par le thème (robots.txt.liquid) : les directives se posent là, pas à la main sur le serveur",,,
+A NE JAMAIS INTERDIRE,"Les chemins /products/, /collections/ et /pages/ : ce sont les pages qui vendent",,,

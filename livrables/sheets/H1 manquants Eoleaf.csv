@@ -1,0 +1,23 @@
+URL,GABARIT,H1 ACTUEL,PROBLEME,REQUETE CIBLE,H1 PROPOSE,LONGUEUR,STATUT
+"Important ⚠️ : le H1 dit à Google et au visiteur de quoi parle la page. L'extraction balisage compte 18 H1 manquants et 12 trop longs. Les manquants se concentrent sur 5 gabarits Shopify : une correction de gabarit traite la page dans les 12 langues d'un seul geste. Cible : un H1 unique, 20 à 70 caractères, contenant l'expression cible.",,,,,,,
+/fr/collections/filtres-et-accessoires,Collection,,Manquant,filtre purificateur d'air eoleaf,Filtres et accessoires pour purificateurs d'air Eoleaf,54,A FAIRE
+/fr/collections/all,Collection,,Manquant,purificateur d'air eoleaf,Tous les purificateurs d'air et accessoires Eoleaf,50,A FAIRE
+/fr/collections,Collection,Collections,Trop court,gamme purificateur d'air,Nos gammes de purificateurs d'air professionnels,48,A FAIRE
+/fr/pages/professionnels,Page métier,,Manquant,purificateur d'air entreprise,Purificateurs d'air pour les professionnels,43,A FAIRE
+/fr/pages/comparatif-produit,Comparatif,,Manquant,comparatif purificateur d'air eoleaf,Comparatif des purificateurs d'air Eoleaf,41,A FAIRE
+/fr/pages/certifications-eoleaf,Institutionnel,,Manquant,certification purificateur d'air,Certifications de nos purificateurs d'air,42,A FAIRE
+/fr/pages/a-propos-de-nous,Institutionnel,,Manquant,eoleaf entreprise,"Eoleaf, expert français du purificateur d'air",46,A FAIRE
+/fr/pages/devenez-distributeur,Institutionnel,,Manquant,devenir distributeur purificateur d'air,Devenir distributeur de purificateurs d'air,44,A FAIRE
+/fr/pages/faqs,FAQ,,Manquant,question purificateur d'air,Questions fréquentes sur les purificateurs d'air,49,A FAIRE
+/fr/pages/formulaire-sav,Service,Formulaire SAV,Trop court,sav purificateur d'air eoleaf,Service après-vente : votre demande d'assistance,49,A FAIRE
+/fr/cart,Panier,Votre panier,Trop court,non applicable,À laisser tel quel : page transactionnelle non indexable,,SANS OBJET
+/fr,Accueil,"Purificateurs d'air haute performance, de qualité médicale, certifiés HEPA",Trop long (74),purificateur d'air haut de gamme,Purificateurs d'air haut de gamme certifiés HEPA,48,A FAIRE
+/fr/products/purificateur-air-purcar,Fiche produit,Purificateur d'air PurCar Filtre HEPA H13 & Ioniseur - Pour tout véhicule,Trop long (73),purificateur voiture eoleaf,"Purificateur d'air PurCar pour voiture, filtre HEPA H13",55,A FAIRE
+/fr/products/filtre-de-rechange-neopur-400,Fiche produit,Filtre de rechange Eoleaf NeoPur 400 (compatible avec AIRVIA ORIGIN 40 et Eoleaf AEROPRO40),Trop long (91),filtre neopur 400,Filtre de rechange NeoPur 400,30,A FAIRE
+/fr/products/filtre-de-rechange-altapur-700,Fiche produit,Filtre de rechange AltaPur 700 (compatible avec AIRVIA PRO 150 et Eoleaf AEROPRO150),Trop long (84),filtre altapur 700,Filtre de rechange AltaPur 700,31,A FAIRE
+/fr/products/prefiltre-de-rechange-altapur-700,Fiche produit,Préfiltre de rechange AltaPur 700 (compatible avec AIRVIA PRO 150 et Eoleaf AEROPRO150),Trop long (87),préfiltre altapur 700,Préfiltre de rechange AltaPur 700,34,A FAIRE
+/fr/products/lampe-uvc-rechange,Fiche produit,"Lampe UV de rechange Eoleaf (compatible avec AIRVIA AERO 100, PRO 150 et ORIGIN 40)",Trop long (83),lampe uvc purificateur,Lampe UVC de rechange Eoleaf,29,A FAIRE
+/fr/products/purificateur-air-neopur-400,Fiche produit,Purificateur d'air NeoPur 400 Surface 40 m2 - Intelligent & Connecté,Conforme (68) mais « m2 » à écrire « m² »,Eoleaf Neopur 400,"Purificateur d'air NeoPur 400, jusqu'à 40 m²",44,A FAIRE
+,,,,,,,
+MENTION DE COMPATIBILITE,Les mentions « compatible avec AIRVIA … » sortent du H1 et descendent dans le corps de la fiche : elles allongent le H1 sans porter la requête,,,,,,
+REGLE APPLIQUEE,Aucune page en top 3 n'est modifiée : à vérifier au contrôle GSC du ticket 01,,,,,,

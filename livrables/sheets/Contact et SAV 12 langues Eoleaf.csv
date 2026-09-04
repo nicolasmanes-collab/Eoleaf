@@ -1,0 +1,18 @@
+LANGUE,URL CONTACT,CODE HTTP CONTACT,URL SAV,CODE HTTP SAV,LIEN ENTRANT DEPUIS,ACTION,STATUT
+Important ⚠️ : /fr/pages/contact ressort en erreur client au crawl et /fr/pages/formulaire-apres-vente répond 404 alors que la FAQ y renvoie. Une page contact injoignable sur un site qui vend en B2B coûte des demandes entrantes chaque jour. Les slugs varient selon la langue : relever ceux des 10 autres versions avant correction.,,,,,,,
+FR,/fr/pages/contact,Erreur client au crawl,/fr/pages/formulaire-sav,Indexée,/fr/pages/faqs,"Vérifier le contact ; le lien FAQ pointe vers formulaire-apres-vente en 404, le repointer vers formulaire-sav",A FAIRE
+FR (doublon),,,/fr/pages/formulaire-apres-vente,404,/fr/pages/faqs,301 vers /fr/pages/formulaire-sav,A FAIRE
+EN (racine),/pages/contact,Erreur client au crawl,/pages/after-sales-form,Erreur client au crawl,À relever,Vérifier les deux,A FAIRE
+DA,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+DE,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+ES,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+FI,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+IT,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+NL,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+NO,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+PL,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+RO,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+SV,À relever,,À relever,,À relever,Relever le slug puis vérifier,A FAIRE
+,,,,,,,
+CRITERE D'ACCEPTATION,Les 12 URL contact et les 12 URL SAV répondent 200,,,,,,
+,Le lien depuis la FAQ pointe vers l'URL vivante sans redirection intermédiaire,,,,,,

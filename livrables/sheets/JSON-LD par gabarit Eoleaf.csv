@@ -1,0 +1,14 @@
+GABARIT,URL TEMOIN,TYPE ATTENDU,PRESENT,PROPRIETES OBLIGATOIRES,GAIN ATTENDU,STATUT
+"Important ⚠️ : les données structurées permettent les résultats enrichis (prix, note, disponibilité, fil d'Ariane) et donnent du contexte à Google sur l'entité Eoleaf. Aucune donnée structurée relevée à ce jour. Le livrable attendu est le code prêt à coller, gabarit par gabarit, pas une recommandation.",,,,,,
+Accueil,/fr,Organization + WebSite,Non relevé,"name, url, logo, sameAs, contactPoint","Entité reconnue, panneau de marque",A FAIRE
+Fiche produit,/fr/products/purificateur-air-altapur-700,Product + Offer,Non relevé,"name, image, description, sku, brand, offers (price, priceCurrency, availability)",Prix et disponibilité dans la SERP,A FAIRE
+Fiche produit,idem,AggregateRating,Non relevé,"ratingValue, reviewCount",Étoiles dans la SERP : nécessite des avis réels sur la fiche,A FAIRE
+Catégorie,/fr/collections/purificateurs-air,CollectionPage + ItemList,Non relevé,"name, itemListElement",Contexte de la liste,A FAIRE
+Tous les gabarits,toutes,BreadcrumbList,Non relevé,"itemListElement (position, name, item)",Fil d'Ariane dans la SERP à la place de l'URL,A FAIRE
+FAQ,/fr/pages/faqs,FAQPage,Non relevé,"mainEntity (Question, acceptedAnswer)",Questions dépliables dans la SERP,A FAIRE
+Page métier,/fr/pages/acheter-un-purificateur-dair-hepa,Article + Person (auteur),Non relevé,"headline, author, datePublished, dateModified",Signal E-E-A-T : un auteur identifié,A FAIRE
+Comparatif,/fr/pages/comparatif-produit,ItemList,Non relevé,itemListElement,Contexte du comparatif,A FAIRE
+Avis clients,/fr/pages/avis-clients,Review,Non relevé,"itemReviewed, author, reviewRating",Preuve sociale structurée,A FAIRE
+,,,,,,
+POINT DE VIGILANCE,Ne déclarer AggregateRating que si les avis sont réellement affichés sur la page : sinon Google sanctionne,,,,,
+CRITERE D'ACCEPTATION,Test des résultats enrichis sans erreur ni avertissement bloquant sur chacun des gabarits,,,,,

@@ -1,0 +1,21 @@
+LANGUE,CODE HREFLANG ATTENDU,PREFIXE URL,JEU COMPLET,AUTOREFERENCE,RECIPROCITE,X-DEFAULT,ANOMALIE RELEVEE,STATUT
+"Important ⚠️ : le hreflang dit à Google quelle version servir à quel pays. Sur 12 langues en production, un jeu incomplet ou non réciproque fait servir la mauvaise langue et met les versions en concurrence. Volet jamais audité. Symptôme déjà visible : 36 URL anglaises servies sous /fr.",,,,,,,,
+Anglais,en,/ (racine),,,,Devrait porter x-default,36 URL anglaises dupliquées sous /fr,A FAIRE
+Français,fr,/fr/,,,,non,Contenu anglais servi sous ce préfixe,A FAIRE
+Danois,da,/da/,,,,non,,A FAIRE
+Allemand,de,/de/,,,,non,,A FAIRE
+Espagnol,es,/es/,,,,non,,A FAIRE
+Finnois,fi,/fi/,,,,non,,A FAIRE
+Italien,it,/it/,,,,non,,A FAIRE
+Néerlandais,nl,/nl/,,,,non,,A FAIRE
+Norvégien,no,/no/,,,,non,,A FAIRE
+Polonais,pl,/pl/,,,,non,,A FAIRE
+Roumain,ro,/ro/,,,,non,,A FAIRE
+Suédois,sv,/sv/,,,,non,Porte du trafic : « rökare » en position 16,A FAIRE
+,,,,,,,,
+POINT DE CONTROLE,CE QU'ON VERIFIE,,,,,,,
+Réciprocité,"Si /fr/X déclare /de/X, alors /de/X doit déclarer /fr/X",,,,,,,
+Autoréférence,Chaque page se déclare elle-même dans son propre jeu,,,,,,,
+x-default,"Une seule version porte x-default, en principe l'anglais",,,,,,,
+Cohérence canonique,"La canonique d'une page pointe vers elle-même, jamais vers une autre langue",,,,,,,
+Codes de langue,"Format ISO 639-1 en minuscules, sans code pays sauf ciblage pays réel",,,,,,,

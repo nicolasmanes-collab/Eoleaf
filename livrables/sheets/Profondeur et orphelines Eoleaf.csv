@@ -1,0 +1,15 @@
+BLOC,NIVEAU OU URL,NOMBRE DE PAGES,DONT PAGES D'ACHAT,IMPRESSIONS 90 J,ACTION,STATUT
+"Important ⚠️ : une page d'achat à plus de 3 clics de l'accueil ne reçoit pas d'autorité et ne se trouve pas. Une page orpheline, sans aucun lien interne entrant, est invisible pour les robots. L'onglet Pages orphelines de l'extraction indexation est resté vide : à remplir au re-crawl du ticket 01.",,,,,,
+Distribution par niveau,Niveau 0 (accueil),,,,,A FAIRE
+Distribution par niveau,Niveau 1,,,,,A FAIRE
+Distribution par niveau,Niveau 2,,,,,A FAIRE
+Distribution par niveau,Niveau 3,,,,,A FAIRE
+Distribution par niveau,Niveau 4 et au-delà,,,,Toute page d'achat ici est un ticket,A FAIRE
+,,,,,,
+Pages d'achat trop profondes,À lister au re-crawl,,,,Remonter par un lien depuis la catégorie ou le pilier de silo,A FAIRE
+,,,,,,
+Orphelines avec impressions,À lister au re-crawl,,,,Perte sèche : recevoir un lien interne depuis sa mère,A FAIRE
+Orphelines sans impression,À lister au re-crawl,,,,Candidate à la fusion dans son pilier de cluster,A FAIRE
+,,,,,,
+METHODE,Croiser le crawl (liens entrants = 0) avec les pages du sitemap ET les pages à impressions GSC,,,,,
+,"Une page présente au sitemap mais sans lien interne est orpheline, même si elle répond 200",,,,,

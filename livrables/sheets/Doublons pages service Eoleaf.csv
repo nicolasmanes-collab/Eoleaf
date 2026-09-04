@@ -1,0 +1,12 @@
+SUJET,URL A CONSERVER,URL DOUBLON,CODE HTTP DOUBLON,ACTION,STATUT
+"Important ⚠️ : plusieurs pages de service existent en deux exemplaires, l'un en français, l'autre avec le slug anglais sous le même préfixe. Deux URL pour un même service, c'est un choix imposé à Google et un lien interne sur deux qui part au mauvais endroit.",,,,,
+Conditions de garantie,/fr/pages/conditions-garantie,/fr/pages/warranty-terms,Erreur client,301 vers la page conservée,A FAIRE
+Formulaire SAV,/fr/pages/formulaire-sav,/fr/pages/formulaire-apres-vente,404,301 vers la page conservée,A FAIRE
+Photos clients,/fr/pages/photos-clients,/fr/pages/client-photos,Erreur client,301 vers la page conservée,A FAIRE
+Générateurs d'ozone,/fr/pages/purificateurs-dair-a-lozone-et-generateurs-dozone-ce-quil-faut-savoir,/fr/pages/purificateurs-et-generateurs-a-lozone-ce-quil-faut-savoir,Erreur client,Fusionner puis 301 : voir le fichier Cannibalisation,A FAIRE
+Belgique,/fr/pages/acheter-un-purificateur-dair-en-belgique,/fr/pages/buying-an-air-purifier-in-belgium,Erreur client,301 vers la page conservée,A FAIRE
+Recherche interne,non applicable,/fr/search,Erreur client,Interdire au crawl : voir le fichier Robots et paramètres,A FAIRE
+Panier,non applicable,/fr/cart,Indexée,Interdire au crawl : une page panier n'a rien à faire dans l'index,A FAIRE
+Recommandation produit,non applicable,/apps/vf-product-reco/2t6d2b2b,noindex,Interdire au crawl : application tierce,A FAIRE
+,,,,,
+METHODE,"Avant chaque 301, vérifier que la page conservée reçoit bien les liens internes qui pointaient vers le doublon",,,,

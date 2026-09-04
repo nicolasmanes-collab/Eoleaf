@@ -1,0 +1,19 @@
+PRODUIT,URL COURTE,URL LONGUE,STATUT CRAWL URL COURTE,STATUT CRAWL URL LONGUE,URL RETENUE,CANONIQUE A POSER,LIENS INTERNES A REPOINTER,STATUT
+"Important ⚠️ : chaque produit Shopify est atteignable en /fr/products/<produit> ET en /fr/collections/<collection>/products/<produit>. Les pages relevées comme indexées sont les URL courtes, alors que l'onglet Tableau de balisage prépare les titles sur les URL longues. Intégré en l'état, ce balisage se pose à côté des pages qui rankent.",,,,,,,,
+NeoPur 400,/fr/products/purificateur-air-neopur-400,/fr/collections/purificateurs-air/products/purificateur-air-neopur-400,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+TeraPur 600,/fr/products/purificateur-air-terapur-600,/fr/collections/purificateurs-air/products/purificateur-air-terapur-600,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+AltaPur 700,/fr/products/purificateur-air-altapur-700,/fr/collections/purificateurs-air/products/purificateur-air-altapur-700,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+PurCar,/fr/products/purificateur-air-purcar,/fr/collections/purificateurs-air/products/purificateur-air-purcar,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+Capteur CO2 Smart CO2,/fr/products/capteur-co2-eoleaf-smart-co2,/fr/collections/all/products/capteur-co2-eoleaf-smart-co2,Erreur client,Erreur client,URL courte,Autoréférente vers URL courte,Unité d'achat morte au crawl : à vérifier en priorité,A FAIRE
+Filtre NeoPur 400,/fr/products/filtre-de-rechange-neopur-400,/fr/collections/filtres-et-accessoires/products/filtre-de-rechange-neopur-400,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+Filtre TeraPur 600,/fr/products/filtre-de-rechange-terapur-600,/fr/collections/filtres-et-accessoires/products/filtre-de-rechange-terapur-600,Erreur client,Erreur client,URL courte,Autoréférente vers URL courte,Les deux formes en échec : à vérifier,A FAIRE
+Filtre AltaPur 700,/fr/products/filtre-de-rechange-altapur-700,/fr/collections/filtres-et-accessoires/products/filtre-de-rechange-altapur-700,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+Préfiltre AltaPur 700,/fr/products/prefiltre-de-rechange-altapur-700,/fr/collections/filtres-et-accessoires/products/prefiltre-de-rechange-altapur-700,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+Filtre PurCar,/fr/products/filtre-de-rechange-purcar,/fr/collections/filtres-et-accessoires/products/filtre-de-rechange-purcar,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+Lampe UVC de rechange,/fr/products/lampe-uvc-rechange,/fr/collections/filtres-et-accessoires/products/lampe-uvc-rechange,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+Terminal de contrôle,/fr/products/terminal-de-controle-rechange,/fr/collections/filtres-et-accessoires/products/terminal-de-controle-rechange,Non relevée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+Terminal de contrôle 2.0,/fr/products/terminal-de-controle-rechange-2-0,/fr/collections/filtres-et-accessoires/products/terminal-de-controle-rechange-2-0,Non relevée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+Kit de communication,/fr/products/kit-communication-gratuit,/fr/collections/all/products/kit-communication-gratuit,Indexée,Erreur client,URL courte,Autoréférente vers URL courte,,A FAIRE
+,,,,,,,,
+A CORRIGER DANS LE TABLEAU DE BALISAGE,,,,,,,,
+Les 6 lignes PRODUITS de l'onglet Tableau de balisage visent les URL longues,Remplacer par la forme courte retenue avant toute intégration,,,,,,,A FAIRE

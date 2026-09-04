@@ -1,0 +1,22 @@
+Mois	Semaine	Brief technique	Livrable	Intervenant	Statut
+SEPTEMBRE	01/09/2026	Re-crawl de contrôle indexation	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1b_tVRfcWzqweKpb5L30yiDJtstaU5D82CE6gUWNYrEo/edit";"Controle indexation Eoleaf")	Nicolas	A faire
+SEPTEMBRE	01/09/2026	Canonique des fiches produit	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1-n0jKORE6XE_sI7gnLOe5n5orXDtGtnIVFIc24ttoHs/edit";"Canonique fiches produit Eoleaf")	Nicolas	A faire
+SEPTEMBRE	08/09/2026	Page contact et formulaire SAV	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1Xbtiqi8qqxckCMM9tamEXibKGKJnycpl10XoOnbg_0Q/edit";"Contact et SAV 12 langues Eoleaf")	Nicolas / Eoleaf	A faire
+SEPTEMBRE	08/09/2026	36 pages EN sous le préfixe /fr	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1dzRHnQFaMkPXW3hvyO_A8-x0JwlwhUAi7MEY7giwvao/edit";"Pages EN sous prefixe fr Eoleaf")	Nicolas / Eoleaf	A faire
+SEPTEMBRE	15/09/2026	Cannibalisation : 14 clusters FR	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1KzD2Mf-ugn3jPmKIFoYTrXalEtu1VyeoZof5pAkUwyc/edit";"Cannibalisation clusters FR Eoleaf")	Jordan / Nicolas	A faire
+SEPTEMBRE	22/09/2026	33 liens internes rompus	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1c7_Bu5rdkz9TmV9wHW_I_RJsEEtkrmIMETtDe1oxpRM/edit";"liens internes rompus")	Eoleaf	A faire
+SEPTEMBRE	22/09/2026	H1 manquants sur 5 gabarits	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1Q6k2HwvNLGqNTloPdjTfgDheWMCL3vIJxo4OL5BJNTE/edit";"H1 manquants Eoleaf")	Jordan / Eoleaf	A faire
+SEPTEMBRE	29/09/2026	Images des gabarits d'achat	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/154aIMHSG_lqUWNOCfNlvgo9ZNHlvUESCsTherEkdcFE/edit";"Images a corriger Eoleaf")	Jordan / Eoleaf	A faire
+OCTOBRE	06/10/2026	Hreflang sur 12 langues	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1MBkbFcXU3orsOy2sg8G5fAnB_hZEP6B-8hDDubPj__8/edit";"Hreflang 12 langues Eoleaf")	Nicolas	A faire
+OCTOBRE	06/10/2026	Redirections des anciennes URL AEROPRO	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1WntNwaXwSKQvZTx6WlzFb1HHujttU6rBjMG_choz6sA/edit";"Redirections AEROPRO Eoleaf")	Eoleaf	A faire
+OCTOBRE	13/10/2026	Doublons de pages de service	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1tpgQ9FPnXUAZMuWnQZB57l_3WAbOUC9ISUbq_IfFVxY/edit";"Doublons pages service Eoleaf")	Eoleaf	A faire
+OCTOBRE	20/10/2026	Vitesse par gabarit	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1QFxHJEqA3_U7PFg_Uk8LAHcUIhfHMoybX7s1n66SvAs/edit";"Vitesse par gabarit Eoleaf")	Nicolas	A faire
+OCTOBRE	27/10/2026	JSON-LD par gabarit	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1sRODCSAIrNeRLF8Hq6r5Vmflq2jNSXjzzoMZYX2WRo8/edit";"JSON-LD par gabarit Eoleaf")	Nicolas / Eoleaf	A faire
+OCTOBRE	27/10/2026	Sitemap contre pages réelles	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1RMWs2FaTOHIcXs-frPj4xF-mshvxdZOUMCwOwZFjIM4/edit";"Sitemap contre pages Eoleaf")	Nicolas	A faire
+NOVEMBRE	03/11/2026	Robots.txt et URL à paramètres	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1oggu_W80Xm-SyQFoyOxGFYEndqvmYiSMBZCJs3GVmqQ/edit";"Robots et parametres Eoleaf")	Nicolas / Eoleaf	A faire
+NOVEMBRE	03/11/2026	Liens sortants rompus	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/13rEU2zMOXDBtBzwUjTdmn7_Q6JqiLZnW1IZKj82nd5w/edit";"Liens sortants a remplacer Eoleaf")	Jordan / Eoleaf	A faire
+NOVEMBRE	10/11/2026	Plan de maillage interne	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1mXYafC-aJlmM8Mph3TIvJIHo2SM8Vfsd4b0v5jJSY0g/edit";"Plan de maillage Eoleaf")	Nicolas	A faire
+NOVEMBRE	10/11/2026	Profondeur et pages orphelines	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1CYMTMD5UYeEz0X0_5aqIadVJUYGchMSwcTaf0NoV7_E/edit";"Profondeur et orphelines Eoleaf")	Nicolas	A faire
+NOVEMBRE	17/11/2026	Couche géo : 4 pages villes	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1XGesA1Kf8IRRNWSMuvSs4JHyIjSipNuv0MOpWM-y0sk/edit";"Pages geo villes Eoleaf")	Jordan	A faire
+NOVEMBRE	24/11/2026	13 comparatifs concurrents	=LIEN_HYPERTEXTE("https://docs.google.com/spreadsheets/d/1-gqb1QzLV9mQQ1b6eVQEhVUUQTf1goEwmq-ulGvcB_Y/edit";"Comparatifs concurrents Eoleaf")	Jordan	A faire
+NOVEMBRE	24/11/2026	Maquettes SXO par étage		Nicolas	A faire

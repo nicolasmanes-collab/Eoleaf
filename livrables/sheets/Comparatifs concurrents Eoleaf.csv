@@ -1,0 +1,21 @@
+CONCURRENT,URL,REQUETE CIBLE,VOLUME,POSITION,TABLEAU COMPARATIF,LIEN VERS FICHE PRODUIT,ACTION,STATUT
+"Important ⚠️ : onze pages comparent Eoleaf à un concurrent. Ce sont des pages à forte intention d'achat : le visiteur compare avant de commander. Elles doivent porter un tableau de comparaison chiffré, une preuve vérifiable et un lien vers la fiche produit. Aucune ne ressort indexée au crawl du 20/05, à confirmer au re-crawl.",,,,,,,,
+Levoit,/fr/pages/purificateurs-dair-levoit-vs-eoleaf,levoit purificateur d air,390,20,À vérifier,À vérifier,Position 20 sur 390 de volume : le premier comparatif à travailler,A FAIRE
+Dyson Big+Quiet,/fr/blogs/blog/le-nouveau-dyson-big-quiet-laisse-encore-a-desirer,dyson big quiet,210,5,À vérifier,À vérifier,"Déjà en position 5 : ne pas toucher le fond, poser le lien produit",A FAIRE
+Dyson chauffant,/fr/pages/les-purificateurs-dair-avec-fonction-de-chauffage-fonctionnent-ils,dyson chauffant,1900,9,À vérifier,À vérifier,1900 de volume en position 9 : fort potentiel,A FAIRE
+Dyson Hot+Cool,/fr/pages/purificateurs-dair-eoleaf-vs-dyson-hot-cool-comment-se-comparent-ils,dyson hot cool avis,Non relevé,Non relevée,À vérifier,À vérifier,Aligner sur le gabarit comparatif,A FAIRE
+Coway Airmega,/fr/pages/purificateur-dair-terapur-600-deoleaf-vs-coway-airmega-mighty-lequel-vous-faut-il,coway airmega avis,Non relevé,Non relevée,À vérifier,Lien rompu relevé,Corriger le lien mort vers la fiche AltaPur 700,A FAIRE
+Shark,/fr/pages/purificateur-d-air-shark-ou-altapur-700-d-eoleaf,purificateur d'air shark,Non relevé,Non relevée,À vérifier,Lien rompu relevé,Corriger le lien mort vers la fiche AltaPur 700,A FAIRE
+Winix,/fr/pages/purificateurs-dair-eoleaf-vs-winix,winix purificateur avis,Non relevé,Non relevée,À vérifier,À vérifier,Lien sortant vers Winix rompu : le retirer,A FAIRE
+Blueair,/fr/pages/purificateurs-dair-eoleaf-vs-blueair,blueair avis,Non relevé,Non relevée,À vérifier,À vérifier,Aligner sur le gabarit comparatif,A FAIRE
+IQAir,/fr/pages/purificateurs-dair-eoleaf-vs-iqair,iqair avis,Non relevé,Non relevée,À vérifier,À vérifier,Aligner sur le gabarit comparatif,A FAIRE
+Philips,/fr/pages/purificateurs-dair-eoleaf-vs-philips,philips purificateur avis,Non relevé,Non relevée,À vérifier,À vérifier,Aligner sur le gabarit comparatif,A FAIRE
+Vax,/fr/pages/purificateur-dair-vax-vs-eoleaf,vax purificateur,Non relevé,Non relevée,À vérifier,À vérifier,"Portait deux H1, corrigé le 24/08",A FAIRE
+Airvia Medical,/fr/pages/qu-est-il-arrive-a-airvia-medical,airvia medical,Non relevé,Non relevée,Sans objet,À vérifier,Page de marque liée à l'historique produit : à conserver telle quelle,A FAIRE
+Airvia Medical (SAV),/fr/pages/reparation-purificateur-dair-airvia-medical-eoleaf,réparation airvia medical,Non relevé,Non relevée,Sans objet,À vérifier,"Intention SAV, pas comparatif : lier vers le formulaire SAV",A FAIRE
+,,,,,,,,
+MODULES ATTENDUS SUR CE GABARIT,,,,,,,,
+Tableau de comparaison,"Surface couverte, débit, classe de filtration, niveau sonore, coût du filtre par an, garantie",,,,,,,
+Preuve,Le test indépendant Eoleaf existe déjà : le citer et le lier sur chaque comparatif,,,,,,,
+Mention honnête,Dire au moins un point où le concurrent est meilleur : c'est ce qui rend le reste crédible,,,,,,,
+Lien de sortie,"Un lien vers la fiche produit du modèle Eoleaf comparé, ancre en exact match",,,,,,,

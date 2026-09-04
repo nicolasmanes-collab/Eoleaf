@@ -1,0 +1,22 @@
+SOURCE,DESTINATION,ANCRE PROPOSEE,TYPE DE LIEN,DEJA POSE,STATUT
+"Important ⚠️ : le maillage interne distribue l'autorité et guide le visiteur vers la page qui vend. Le volet n'a jamais été produit : la quarantaine de pages métier « acheter-un-purificateur-dair-pour-* » n'est pas câblée vers les fiches produit. Règle : chaque page reçoit un lien de sa mère, lie ses filles et 2 à 3 sœurs du même silo. Ancre en exact match, contiguë, jamais « voir la sélection ».",,,,,
+/fr/pages/acheter-un-purificateur-dair-hepa,/fr/products/purificateur-air-altapur-700,purificateur d'air AltaPur 700,Pilier vers unité d'achat,À vérifier,A FAIRE
+/fr/pages/acheter-un-purificateur-dair-professionnel,/fr/collections/purificateurs-air,purificateurs d'air professionnels,Pilier vers catégorie,À vérifier,A FAIRE
+/fr/pages/acheter-un-purificateur-dair-pour-la-voiture,/fr/products/purificateur-air-purcar,purificateur d'air PurCar,Pilier vers unité d'achat,À vérifier,A FAIRE
+/fr/pages/acheter-un-purificateur-dair-de-qualite-medicale,/fr/products/purificateur-air-terapur-600,purificateur d'air TeraPur 600,Pilier vers unité d'achat,À vérifier,A FAIRE
+/fr/pages/comment-fonctionnent-les-filtres-hepa,/fr/pages/acheter-un-purificateur-dair-hepa,acheter un purificateur d'air HEPA,Question vers pilier,À vérifier,A FAIRE
+/fr/pages/tout-savoir-sur-lionisation,/fr/collections/purificateurs-air,purificateurs d'air professionnels,Question vers catégorie,À vérifier,A FAIRE
+/fr/pages/guide-dachat-comment-choisir-un-purificateur-dair,/fr/pages/comparatif-produit,comparatif des purificateurs d'air Eoleaf,Guide vers comparatif,À vérifier,A FAIRE
+/fr/collections/purificateurs-air,/fr/pages/guide-dachat-comment-choisir-un-purificateur-dair,comment choisir un purificateur d'air,Catégorie vers guide,À vérifier,A FAIRE
+/fr/pages/qualite-de-lair-a-lyon,/fr/pages/acheter-un-purificateur-dair-professionnel,purificateur d'air professionnel,Géo vers pilier,À vérifier,A FAIRE
+/fr/pages/purificateurs-dair-levoit-vs-eoleaf,/fr/products/purificateur-air-neopur-400,purificateur d'air NeoPur 400,Comparatif vers unité d'achat,À vérifier,A FAIRE
+,,,,,
+A PRODUIRE AVANT DE REMPLIR,,,,,
+1,"Carte XMind des silos, à partir du cocon sémantique existant (app.xmind.com/nAIkleML)",,,,A FAIRE
+2,"Relevé des liens internes déjà posés : sans ce contrôle, une partie du plan est du travail fantôme",,,,A FAIRE
+3,"Score de page interne actuel contre cible, pour savoir si un lien de plus sert à quelque chose",,,,A FAIRE
+,,,,,
+REGLES D'ANCRE,"L'expression cible reste contiguë : « purificateur d'air HEPA », pas « purificateur (…) HEPA »",,,,
+,"Un jeu d'ancres qui tourne par cible, jamais la même ancre partout",,,,
+,Pas de lien inter-silo hors navigation,,,,
+,Un lien contextuel haut dans la page vaut plus qu'un lien de pied de page,,,,

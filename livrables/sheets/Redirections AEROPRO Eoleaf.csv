@@ -1,0 +1,11 @@
+ANCIENNE URL,ANCIEN MODELE,NOUVEAU MODELE,REDIRECTION 301 VERS,LIENS INTERNES POINTANT DESSUS,STATUT
+"Important ⚠️ : la gamme a changé de nom (AEROPRO devenu NeoPur, TeraPur, AltaPur) mais les anciennes URL circulent encore et répondent en erreur. Elles reçoivent des liens internes et probablement des liens externes : sans 301, cette autorité est perdue et le visiteur tombe sur une page morte.",,,,,
+/fr/products/aeropro-40-airpurifier,AEROPRO 40,NeoPur 400,/fr/products/purificateur-air-neopur-400,À relever,A FAIRE
+/fr/products/aeropro-100-airpurifier,AEROPRO 100,TeraPur 600,/fr/products/purificateur-air-terapur-600,À relever,A FAIRE
+/fr/products/aeropro-150-airpurifier,AEROPRO 150,AltaPur 700,/fr/products/purificateur-air-altapur-700,À relever,A FAIRE
+/collections/air-purifiers/products/aeropro-150-airpurifier-en,AEROPRO 150 (EN),AltaPur 700,/products/altapur-700-air-purifier,Cible morte répétée sur 12 langues,A FAIRE
+/collections/air-purifiers/products/altapur-700-air-purifier-en,suffixe -en parasite,AltaPur 700,/products/altapur-700-air-purifier,"24 liens internes, toutes langues",A FAIRE
+/fr/collections/air-purifiers/products/aeropro-150-airpurifier,AEROPRO 150 sous /fr,AltaPur 700,/fr/products/purificateur-air-altapur-700,Appelée depuis 3 pages FR,A FAIRE
+/products/altapur-700-air-purifier-en,suffixe -en parasite,AltaPur 700,/products/altapur-700-air-purifier,Déjà en redirection : vérifier la cible finale,A FAIRE
+,,,,,
+A VERIFIER AUSSI,"Les visuels de fiche produit portent encore les noms AEROPRO40, AEROPRO100, AEROPRO150 dans leurs fichiers : sans impact SEO direct, mais les ALT doivent nommer le modèle actuel",,,,

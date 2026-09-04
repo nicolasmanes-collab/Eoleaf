@@ -1,0 +1,12 @@
+TYPE D'ECART,URL,PRESENTE AU SITEMAP,CODE HTTP,INDEXABLE,ACTION,STATUT
+"Important ⚠️ : le sitemap est la liste que le site déclare à Google. Deux écarts coûtent cher : une page indexable absente du sitemap, que Google découvre mal ; une URL déclarée au sitemap qui répond autre chose que 200, qui abîme la confiance dans le fichier. Grille à remplir au re-crawl du ticket 01.",,,,,,
+Sitemap à localiser,https://eoleaf.com/sitemap.xml,,,,"Relever les sitemaps enfants générés par Shopify (produits, collections, pages, blogs) et par l'application de traduction",A FAIRE
+Déclaration robots.txt,,,,,Vérifier que le sitemap est déclaré dans robots.txt,A FAIRE
+Sitemap par langue,,,,,"Vérifier qu'il existe un sitemap par langue, ou un sitemap global portant les 12 versions",A FAIRE
+Indexable hors sitemap,,,,,Lister puis corriger,A FAIRE
+Au sitemap mais non 200,,,,,Lister puis retirer ou corriger,A FAIRE
+Au sitemap mais noindex,,,,,Lister puis trancher,A FAIRE
+Au sitemap mais redirigée,,,,,Remplacer par l'URL de destination,A FAIRE
+Au sitemap mais non canonique,,,,,Remplacer par l'URL canonique,A FAIRE
+,,,,,,
+A CONTROLER EN PRIORITE,Les 3 anciennes URL AEROPRO et les 36 URL anglaises sous /fr ne doivent pas figurer au sitemap,,,,,

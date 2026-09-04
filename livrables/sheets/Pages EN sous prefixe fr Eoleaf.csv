@@ -1,0 +1,38 @@
+URL EN SOUS /fr,SUJET,EQUIVALENT FR EXISTANT,URL EN CORRECTE A LA RACINE,ACTION,STATUT
+"Important ⚠️ : 36 URL en anglais sont servies sous le préfixe /fr. C'est un défaut de l'application de traduction : la page existe en double et Google reçoit du contenu anglais sur une URL déclarée française. Règle de décision : si la page FR équivalente existe, 301 de l'URL anglaise vers elle ; sinon 301 vers l'URL anglaise à la racine.",,,,,
+/fr/pages/how-do-hepa-filters-work,Filtres HEPA,/fr/pages/comment-fonctionnent-les-filtres-hepa,/pages/how-do-hepa-filters-work,301 vers la page FR,A FAIRE
+/fr/pages/what-is-activated-carbon-filtration,Filtration charbon actif,/fr/pages/quest-ce-que-la-filtration-au-charbon-actif,/pages/what-is-activated-carbon-filtration,301 vers la page FR,A FAIRE
+/fr/pages/activated-carbon-and-its-role-in-air-filtration,Rôle du charbon actif,/fr/pages/le-charbon-actif-et-son-role-dans-la-filtration-de-lair,/pages/activated-carbon-and-its-role-in-air-filtration,301 vers la page FR,A FAIRE
+/fr/pages/all-about-ionisation,Ionisation,/fr/pages/tout-savoir-sur-lionisation,/pages/all-about-ionisation,301 vers la page FR,A FAIRE
+/fr/pages/ionisers-what-do-they-do,Ioniseurs,/fr/pages/ioniseurs-a-quoi-servent-ils,/pages/ionisers-what-do-they-do,301 vers la page FR,A FAIRE
+/fr/pages/negative-ions-and-their-benefits-on-our-health,Ions négatifs,/fr/pages/les-ions-negatifs-et-leurs-bienfaits-pour-notre-sante,/pages/negative-ions-and-their-benefits-on-our-health,301 vers la page FR,A FAIRE
+/fr/pages/all-about-uv-sterilisation,Stérilisation UVC,/fr/pages/tout-savoir-sur-la-sterilisation-uvc,/pages/all-about-uv-sterilisation,301 vers la page FR,A FAIRE
+/fr/pages/how-does-photocatalysis-work,Photocatalyse,/fr/pages/tout-savoir-sur-la-photocatalyse,/pages/how-does-photocatalysis-work,301 vers la page FR,A FAIRE
+/fr/pages/all-about-particulate-matter-pm,Particules fines,/fr/pages/tout-savoir-sur-les-particules-fines-pm,/pages/all-about-particulate-matter-pm,301 vers la page FR,A FAIRE
+/fr/pages/all-you-need-to-know-about-volatile-organic-compounds-vocs,COV,/fr/pages/tout-ce-que-vous-devez-savoir-sur-les-composes-organiques-volatils-cov,/pages/all-you-need-to-know-about-volatile-organic-compounds-vocs,301 vers la page FR,A FAIRE
+/fr/pages/what-is-ground-level-ozone,Ozone troposphérique,/fr/pages/quest-ce-que-lozone-tropospherique,/pages/what-is-ground-level-ozone,301 vers la page FR,A FAIRE
+/fr/pages/what-is-chemical-pollution,Pollution chimique,/fr/pages/quest-ce-que-la-pollution-chimique,/pages/what-is-chemical-pollution,301 vers la page FR,A FAIRE
+/fr/pages/all-about-biological-pollution,Pollution biologique,/fr/pages/quest-ce-que-la-pollution-biologique,/pages/all-about-biological-pollution,301 vers la page FR,A FAIRE
+/fr/pages/air-quality-and-the-different-forms-of-air-pollution,Formes de pollution,/fr/pages/la-qualite-de-lair-et-les-differentes-formes-de-pollution-de-lair,/pages/air-quality-and-the-different-forms-of-air-pollution,301 vers la page FR,A FAIRE
+/fr/pages/the-new-who-air-quality-guidelines,Directives OMS,/fr/pages/les-nouvelles-directives-de-loms-sur-la-qualite-de-lair,/pages/the-new-who-air-quality-guidelines,301 vers la page FR,A FAIRE
+/fr/pages/respiratory-diseases-and-air-pollution,Maladies respiratoires,/fr/pages/maladies-respiratoires-et-pollution-de-lair,/pages/respiratory-diseases-and-air-pollution,301 vers la page FR,A FAIRE
+/fr/pages/can-air-purifiers-alleviate-asthma-symptoms,Asthme,/fr/pages/un-purificateur-dair-peut-il-soulager-les-symptomes-de-lasthme,/pages/can-air-purifiers-alleviate-asthma-symptoms,301 vers la page FR,A FAIRE
+/fr/pages/fight-against-respiratory-allergies-with-an-air-purifier,Allergies respiratoires,/fr/pages/luttez-contre-les-allergies-respiratoires-avec-un-purificateur-dair,/pages/fight-against-respiratory-allergies-with-an-air-purifier,301 vers la page FR,A FAIRE
+/fr/pages/using-an-air-purifier-to-fight-pollen-allergy,Allergie pollen,/fr/pages/utiliser-un-purificateur-dair-pour-lutter-contre-lallergie-au-pollen,/pages/using-an-air-purifier-to-fight-pollen-allergy,301 vers la page FR,A FAIRE
+/fr/pages/using-an-air-purifier-to-combat-airborne-germs,Germes en suspension,/fr/pages/utiliser-un-purificateur-dair-pour-lutter-contre-les-germes-en-suspension-dans-lair,/pages/using-an-air-purifier-to-combat-airborne-germs,301 vers la page FR,A FAIRE
+/fr/pages/how-to-use-air-purifiers-to-fight-allergies-to-dust-and-dustmites,Acariens et poussière,/fr/pages/comment-utiliser-les-purificateurs-dair-pour-lutter-contre-les-allergies-a-la-poussiere-e-aux-acariens,/pages/how-to-use-air-purifiers-to-fight-allergies-to-dust-and-dustmites,301 vers la page FR,A FAIRE
+/fr/pages/how-an-air-purifier-can-help-with-pet-allergies,Allergies animaux,/fr/pages/comment-un-purificateur-dair-peut-aider-avec-les-allergies-aux-animaux,/pages/how-an-air-purifier-can-help-with-pet-allergies,301 vers la page FR,A FAIRE
+/fr/pages/how-air-purifiers-can-protect-you-from-fine-particle-pollution,Particules fines,/fr/pages/comment-les-purificateurs-dair-peuvent-vous-proteger-de-la-pollution-par-les-particules-fines,/pages/how-air-purifiers-can-protect-you-from-fine-particle-pollution,301 vers la page FR,A FAIRE
+/fr/pages/using-an-air-purifier-to-protect-your-lungs-from-cigarette-smoke,Fumée de cigarette,/fr/pages/utiliser-un-purificateur-dair-pour-proteger-vos-poumons-de-la-fumee-de-cigarette,/pages/using-an-air-purifier-to-protect-your-lungs-from-cigarette-smoke,301 vers la page FR,A FAIRE
+/fr/pages/combatting-bad-odours-with-an-air-purifier,Mauvaises odeurs,/fr/pages/combattre-les-mauvaises-odeurs-avec-un-purificateur-dair,/pages/combatting-bad-odours-with-an-air-purifier,301 vers la page FR,A FAIRE
+/fr/pages/where-to-install-an-air-purifier,Où installer,/fr/pages/ou-installer-un-purificateur-dair,/pages/where-to-install-an-air-purifier,301 vers la page FR,A FAIRE
+/fr/pages/sleep-better-with-eoleaf,Mieux dormir,/fr/pages/dormez-mieux-en-installant-un-purificateur-dair-dans-votre-chambre,/pages/sleep-better-with-eoleaf,301 vers la page FR,A FAIRE
+/fr/pages/eoleafs-multi-layer-filtration-technology,Technologie multicouche,/fr/pages/la-technologie-de-filtration-multicouche-utilisee-par-eoleaf,/pages/eoleafs-multi-layer-filtration-technology,301 vers la page FR,A FAIRE
+/fr/pages/warranty-terms,Conditions de garantie,/fr/pages/conditions-garantie,/pages/warranty-terms,301 vers la page FR,A FAIRE
+/fr/pages/mould,Moisissures,/fr/pages/utiliser-un-purificateur-dair-pour-lutter-contre-les-moisissures,/pages/mould,301 vers la page FR,A FAIRE
+/fr/pages/wildfires-and-indoor-air-quality,Incendies de forêt,/fr/pages/acheter-un-purificateur-dair-pour-la-fumee-des-incendies-de-foret,/pages/wildfires-and-indoor-air-quality,301 vers la page FR,A FAIRE
+/fr/pages/buying-an-air-purifier-in-belgium,Belgique,/fr/pages/acheter-un-purificateur-dair-en-belgique,/pages/buying-an-air-purifier-in-belgium,301 vers la page FR,A FAIRE
+/fr/products/aeropro-40-airpurifier,Ancien modèle AEROPRO 40,/fr/products/purificateur-air-neopur-400,/products/neopur-400-air-purifier,301 vers la fiche NeoPur 400 : voir ticket Redirections AEROPRO,A FAIRE
+/fr/products/aeropro-100-airpurifier,Ancien modèle AEROPRO 100,/fr/products/purificateur-air-terapur-600,/products/terapur-600-air-purifier,301 vers la fiche TeraPur 600 : voir ticket Redirections AEROPRO,A FAIRE
+/fr/products/aeropro-150-airpurifier,Ancien modèle AEROPRO 150,/fr/products/purificateur-air-altapur-700,/products/altapur-700-air-purifier,301 vers la fiche AltaPur 700 : voir ticket Redirections AEROPRO,A FAIRE
+/fr/products/replacement-uvc-lamp,Lampe UVC,/fr/products/lampe-uvc-rechange,/products/replacement-uvc-lamp,301 vers la page FR,A FAIRE

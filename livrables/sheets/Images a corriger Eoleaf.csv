@@ -1,0 +1,33 @@
+FICHIER,GABARIT,POIDS ACTUEL Ko,FORMAT,LARGEUR SERVIE,POIDS CIBLE Ko,ALT PROPOSE,STATUT
+"Important ⚠️ : 334 images pour 91,3 Mo relevées, soit 273 Ko de moyenne. 64 images au-delà de 200 Ko, 36 au-delà de 500 Ko, 99 PNG et aucun webp. Et 192 ALT vides sur 334, soit 57 %. Les plus lourdes sont des visuels de fiche produit, donc sur le gabarit qui encaisse. Cible : webp, moins de 200 Ko, largeur servie inférieure ou égale à 1500 px, un ALT descriptif partout.",,,,,,,
+PurCar_6.png,Fiche produit PurCar,3580,PNG,2048,moins de 150,Purificateur d'air PurCar installé dans un habitacle de voiture,A FAIRE
+PurCar_5.png,Fiche produit PurCar,3490,PNG,2048,moins de 150,Purificateur d'air PurCar vu de trois quarts,A FAIRE
+NeoPur_pro_2.png,Fiche produit NeoPur 400,3477,PNG,1900,moins de 150,Purificateur d'air NeoPur 400 en bureau professionnel,A FAIRE
+PurCar_1.png,Fiche produit PurCar,3380,PNG,2048,moins de 150,Purificateur d'air PurCar de face,A FAIRE
+PurCar_3.png,Fiche produit PurCar,3377,PNG,2048,moins de 150,Filtre HEPA H13 du purificateur PurCar,A FAIRE
+PurCar_2.png,Fiche produit PurCar,3250,PNG,2048,moins de 150,Purificateur d'air PurCar fixé sur appuie-tête,A FAIRE
+PurCar_4.png,Fiche produit PurCar,3028,PNG,2048,moins de 150,Commandes du purificateur d'air PurCar,A FAIRE
+TeraPur_home_3.png,Fiche produit TeraPur 600,2958,PNG,2048,moins de 150,Purificateur d'air TeraPur 600 dans un salon,A FAIRE
+fr_qualite_d_air_1680175736.png,Accueil,2929,PNG,non relevée,moins de 150,Indice de qualité de l'air intérieur mesuré par Eoleaf,A FAIRE
+TeraPur_home_5.png,Fiche produit TeraPur 600,2796,PNG,2048,moins de 150,Purificateur d'air TeraPur 600 vu de côté,A FAIRE
+TeraPur_pro_1.png,Fiche produit TeraPur 600,2792,PNG,2048,moins de 150,Purificateur d'air TeraPur 600 en salle de réunion,A FAIRE
+NeoPur_pro_4.png,Fiche produit NeoPur 400,2679,PNG,2048,moins de 150,Écran de contrôle du purificateur NeoPur 400,A FAIRE
+AEROPRO100-ENV1.jpg,Fiche produit (ancien modèle),non relevé,JPEG,800,moins de 150,Purificateur d'air TeraPur 600 en cabinet médical,A FAIRE
+150-04.jpg,Fiche produit AltaPur 700,non relevé,JPEG,1500,moins de 150,Purificateur d'air AltaPur 700 en grand espace,A FAIRE
+AEROPRO40-ENV5.jpg,Fiche produit (ancien modèle),non relevé,JPEG,750,moins de 150,Purificateur d'air NeoPur 400 dans une chambre,A FAIRE
+AEROPRO150-ENV1.jpg,Fiche produit (ancien modèle),non relevé,JPEG,2000,moins de 150,Purificateur d'air AltaPur 700 en open space,A FAIRE
+AEROPRO40-ENV4.jpg,Fiche produit (ancien modèle),non relevé,JPEG,750,moins de 150,Purificateur d'air NeoPur 400 posé au sol,A FAIRE
+AEROPRO150-ENV2.jpg,Fiche produit (ancien modèle),non relevé,JPEG,2000,moins de 150,Purificateur d'air AltaPur 700 en salle d'attente,A FAIRE
+EOLEAF_Website_Splash_Photo_PURIFIERS_FILTERS_v2_12x9.jpg,Collection filtres,non relevé,JPEG,non relevée,moins de 150,Gamme de filtres de rechange Eoleaf,A FAIRE
+Car_1.jpg,Fiche produit PurCar,non relevé,JPEG,3000,moins de 150,Purificateur d'air PurCar dans une voiture,A FAIRE
+,,,,,,,
+SYNTHESE,VALEUR RELEVEE,CIBLE,,,,,
+Images relevées,334,non applicable,,,,,
+Poids total,"91,3 Mo",moins de 25 Mo,,,,,
+Images au-delà de 200 Ko,64,0,,,,,
+Images au-delà de 500 Ko,36,0,,,,,
+Fichiers PNG,99,0 sur les gabarits d'achat,,,,,
+Fichiers webp,0,tous les gabarits d'achat,,,,,
+ALT vides,192 sur 334,"0 sur accueil, collection et fiche produit",,,,,
+,,,,,,,
+METHODE,"Les 172 ALT vides restants se traitent dans la médiathèque Shopify, une fois par fichier : l'ALT suit l'image dans les 12 langues",,,,,,

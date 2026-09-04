@@ -1,0 +1,12 @@
+VILLE,URL,REQUETE CIBLE,VOLUME,POSITION,LIEN VERS UNITE D'ACHAT,GABARIT COMMUN,ACTION,STATUT
+"Important ⚠️ : quatre pages ville existent et deux portent déjà du trafic (Lyon en position 6, Paris en 18). Cette couche géo n'est pas structurée : pas de gabarit commun, pas de lien vers l'unité d'achat, pas de LocalBusiness. C'est une couche à industrialiser ou à assumer comme éditoriale, pas à laisser au milieu du gué.",,,,,,,,
+Lyon,/fr/pages/qualite-de-lair-a-lyon,qualité de l air lyon,480,6,À vérifier,Non,"Poser le lien vers le pilier professionnel, mesurer avant d'étendre",A FAIRE
+Paris,/fr/pages/qualite-de-lair-a-paris-idees-solutions-et-astuces-pour-respirer-un-air-sain,murs anti-pollution urbaine paris,1300,18,À vérifier,Non,"Slug trop long : raccourcir avec 301, puis mêmes modules que Lyon",A FAIRE
+Lille,/fr/pages/qualite-de-lair-a-lille,qualité de l'air lille,Non relevé,Non relevée,À vérifier,Non,Aligner sur le gabarit une fois défini,A FAIRE
+Londres,/fr/pages/qualie-de-lair-a-londres-informations-solutions-et-conseils-pour-un-air-plus-sain,smog de londres,170,16,À vérifier,Non,Faute de frappe dans le slug (« qualie ») : corriger avec 301,A FAIRE
+Paris (EN),/pages/air-quality-in-paris-ideas-solutions-and-tips-for-clean-air,air pollution in paris france,260,7,À vérifier,Non,Version EN performante : aligner sur le même gabarit,A FAIRE
+,,,,,,,,
+A TRANCHER,Cette couche géo est-elle un axe d'acquisition ou une vitrine éditoriale ?,,,,,,,
+Si axe d'acquisition,"Un gabarit commun, un lien vers l'unité d'achat, un JSON-LD LocalBusiness si Eoleaf a une présence physique, et une extension aux villes à volume",,,,,,,
+Si vitrine éditoriale,"Les 4 pages restent, on corrige les slugs et on les câble au pilier, sans en créer d'autres",,,,,,,
+POINT DE VIGILANCE,"Les slugs de Paris et Londres portent une phrase entière, dont une faute de frappe : à corriger avec 301, pas en place",,,,,,,
